@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="bg-primary rounded-t-2xl">
             <div className="flex items-center justify-between p-6">
                 <div className="flex">
-                    <p className="text-white font-extrabold">Sola</p>
+                    <p className="text-white font-extrabold">SOLA</p>
                 </div>
                 <div className="flex items-center gap-5">
                     <div className="flex gap-2">
