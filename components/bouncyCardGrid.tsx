@@ -8,8 +8,8 @@ import { Button } from "./button";
 export const BouncyCardsFeatures = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 mt-10 text-black">
-      <div className="mb-12 flex flex-col items-center gap-12">
-        <h2 className="text-4xl font-bold md:text-5xl">
+      <div className="mb-12 flex flex-col items-center text-center gap-12">
+        <h2 className="text-3xl font-bold md:text-4xl">
           Kontorpladser i <span className="text-[#39592c]">hyggelige omgivelser</span> 
         </h2>
         <p className="text-slate-800 font-bold max-w-lg mb-10">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
@@ -50,7 +50,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/tree.svg">Et spændende community</CardTitle>
+          <CardTitle logoPath="/icons/tree.svg">Spændende community</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-white">
                 Få og giv sparring med andre virksomheder og selvstændige
@@ -58,10 +58,10 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/cactus-2.svg">Møderum</CardTitle>
+          <CardTitle logoPath="/icons/cactus-2.svg">Mødelokale</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-white">
-              13m2 med mødebord, whiteboard, internet og fladsskærms-tv
+              13m2 med bord, whiteboard, internet og fladskærms-tv
             </span>
           </div>
         </BounceCard>
@@ -90,9 +90,9 @@ const BounceCard = ({
 
 const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath: string }) => {
   return (
-    <div className="flex">
+    <div className="flex items-center justify-center gap-2">
         <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
-        <h3 className="mx-auto text-center text-3xl font-semibold">{children}</h3>
+        <h3 className="text-2xl font-semibold">{children}</h3>
     </div>
   );
 };

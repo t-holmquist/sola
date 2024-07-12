@@ -5,10 +5,11 @@ import { Button } from "./button";
 export const Pricing = () => {
   return (
     <div className="flex justify-center mt-24">
-        <div className="relative flex flex-col items-center bg-accent rounded-2xl p-10 gap-3">
-            <Image src="/icons/shape-triangles.svg" width={70} height={70} alt="graphic" className="absolute -left-10 -top-5"/>
-            <h2 className="text-2xl font-bold md:text-2xl text-black">Fast pris på kontorpladser</h2>
-            <p className="text-slate-700 font-bold max-w-lg">1000,- eksklusiv moms</p>
+        <div className="relative flex flex-col items-center bg-accent rounded-2xl p-10 gap-5 text-center">
+            <Image src="/icons/shape-triangles.svg" width={110} height={110} alt="graphic" className="absolute -left-14 -top-12"/>
+            <h2 className="text-2xl font-bold md:text-4xl text-black">Fast pris på kontorpladser</h2>
+            <p className="text-black font-bold max-w-lg">2000,- eksklusiv moms pr. plads</p>
+            <p className="text-slate-700 font-normal max-w-md">Hvis du er i tvivl om det er noget for dig, er du altid velkommen til at kigge forbi!</p>
             <Button text="Stik mig en rundvisning" bgcolor="#39592c" link="mailto:kontakt@epilog.dk"/>
         </div>
     </div>
