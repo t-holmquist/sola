@@ -66,8 +66,10 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
       </div>
-      <div className="flex justify-center mt-10">
-        <Button text="Kontakt" bgcolor="#39592c"/>
+      <div className="flex flex-col items-center mt-10">
+        <h2 className="text-2xl font-bold md:text-2xl">Kom forbi og få en kop kaffe</h2>
+        <p className="mb-5 text-slate-700 font-bold max-w-lg">Eller send os en mail og hør mere</p>
+        <Button text="Kontakt" bgcolor="#39592c" link="mailto:kontakt@epilog.dk"/>
       </div>
     </section>
   );

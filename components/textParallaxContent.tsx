@@ -101,8 +101,8 @@ const OverlayCopy = ({
         </p>
         <p className="text-center text-xl font-normal md:text-4xl">{subheading}</p>
         <div className="flex gap-10 mt-10">
-          <Button text="Kaffebar" bgcolor="#799ff2"/>
-          <Button text="Kontorfællesskab" bgcolor="#39592c"/>
+          <Button text="Kaffebar" bgcolor="#799ff2" link="/"/>
+          <Button text="Kontorfællesskab" bgcolor="#39592c" link="/"/>
         </div>
       </motion.div>
     );
