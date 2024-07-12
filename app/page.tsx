@@ -1,4 +1,5 @@
 import { BouncyCardsFeatures } from "@/components/bouncyCardGrid";
+import HorizontalScrollContent from "@/components/horizontalScrollCarousel";
 import { TextParallaxContent } from "@/components/textParallaxContent";
 
 
@@ -10,7 +11,8 @@ export default function Home() {
         subheading="Kaffebar og kontorfællesskab"
         heading="SOLA"
       >
-        <BouncyCardsFeatures /> 
+        <BouncyCardsFeatures />
+        <HorizontalScrollContent /> 
       </TextParallaxContent>
       
     </div>

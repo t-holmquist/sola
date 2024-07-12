@@ -7,34 +7,34 @@ import { Button } from "./button";
 
 export const BouncyCardsFeatures = () => {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-8 text-black">
-      <div className="mb-12 flex flex-col items-center gap-10">
+    <section className="mx-auto max-w-7xl px-4 mt-10 text-black">
+      <div className="mb-12 flex flex-col items-center gap-12">
         <h2 className="text-4xl font-bold md:text-5xl">
-          Kontorplads i hyggelige omgivelser 
+          Kontorplads i <span className="text-[#39592c]">hyggelige omgivelser</span> 
         </h2>
-        <p className="text-slate-700 font-bold max-w-lg">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab</p>
+        <p className="text-slate-800 font-bold max-w-lg mb-10">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab</p>
       </div>
-      <div className="mb-4 grid grid-cols-12 gap-4">
+      <div className="mb-10 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle logoPath="/icons/branch.svg">20+ Iværksættere</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-r from-[#39592c] to-[#608053] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-indigo-50">
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <span className="block text-center font-bold text-white">
               Bliv en del af et hyggeligt fællesskab
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle logoPath="/icons/cactus.svg">Sociale arrangementer</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-r from-[#39592c] to-[#608053] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-orange-50">
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <span className="block text-center font-semibold text-white">
               Fællesmorgenmad og andre gode aktiviteter
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle logoPath="/icons/flamingo.svg">Faste pladser</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-r from-[#39592c] to-[#608053] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-orange-50">
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <span className="block text-center font-semibold text-white">
               Hævesænkebord, kontorstol, internet og bordlampe
             </span>
           </div>
@@ -43,30 +43,30 @@ export const BouncyCardsFeatures = () => {
       <div className="grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle logoPath="/icons/fox.svg">Adgang 24/7</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-r from-[#39592c] to-[#608053] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-emerald-50">
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <span className="block text-center font-semibold text-white">
               Arbejd når det passer dig
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle logoPath="/icons/snow.svg">Et spændende community</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-r from-[#39592c] to-[#608053] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-red-50">
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <span className="block text-center font-semibold text-white">
                 Få og giv sparring med andre virksomheder og selvstændige
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle logoPath="/icons/cactus-2.svg">Møderum</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-r from-[#39592c] to-[#608053] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-red-50">
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <span className="block text-center font-semibold text-white">
               13m2 med mødebord, whiteboard, internet og fladsskærms-tv
             </span>
           </div>
         </BounceCard>
       </div>
-      <div className="flex flex-col items-center mt-10">
+      <div className="flex flex-col items-center mt-20">
         <h2 className="text-2xl font-bold md:text-2xl">Kom forbi og få en kop kaffe</h2>
         <p className="mb-5 text-slate-700 font-bold max-w-lg">Eller send os en mail og hør mere</p>
         <Button text="Kontakt" bgcolor="#39592c" link="mailto:kontakt@epilog.dk"/>
