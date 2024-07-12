@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode, useRef } from "react";
+import { Button } from "./button";
 
 const IMG_PADDING = 12;
 
@@ -100,12 +101,8 @@ const OverlayCopy = ({
         </p>
         <p className="text-center text-xl font-normal md:text-4xl">{subheading}</p>
         <div className="flex gap-10 mt-10">
-          <button className="w-full rounded-2xl bg-[#DEB8A1] p-4 text-xl text-black transition-colors hover:bg-neutral-700 md:w-fit">
-            Kaffebar
-          </button>
-          <button className="w-full rounded-2xl bg-[#39592c] p-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-            Kontorfællesskab
-          </button>
+          <Button text="Kaffebar" bgcolor="#799ff2"/>
+          <Button text="Kontorfællesskab" bgcolor="#39592c"/>
         </div>
       </motion.div>
     );
