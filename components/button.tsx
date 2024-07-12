@@ -9,7 +9,7 @@ export const Button = ( { text, bgcolor, link } : { text: string, bgcolor: strin
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className={`whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl transition-colors hover:bg-slate-700 bg-[${bgcolor}]`}
+            className={`whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl transition-colors hover:bg-primary2 bg-[${bgcolor}]`}
           >
             {text}
           </motion.button>

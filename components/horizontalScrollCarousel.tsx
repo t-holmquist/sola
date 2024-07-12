@@ -7,11 +7,6 @@ const HorizontalScrollContent = () => {
   return (
     <div className="bg-slate-300">
       <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Noget andet her
-        </span>
-      </div>
     </div>
   );
 };
@@ -22,7 +17,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-56%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-71%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-[#f0efd6]">
@@ -65,27 +60,27 @@ type CardType = {
 
 const cards: CardType[] = [
   {
-    url: "/office.jpg",
+    url: "/office1.jpg",
     title: "Title 1",
     id: 1,
   },
   {
-    url: "/office.jpg",
-    title: "/office.jpg",
+    url: "/office2.jpg",
+    title: "Title 2",
     id: 2,
   },
   {
-    url: "/office.jpg",
+    url: "/office5.jpg",
     title: "Title 3",
     id: 3,
   },
   {
-    url: "/office.jpg",
+    url: "/office3.jpg",
     title: "Title 4",
     id: 4,
   },
   {
-    url: "/office.jpg",
+    url: "/office4.jpg",
     title: "Title 5",
     id: 5,
   },
@@ -95,7 +90,7 @@ const cards: CardType[] = [
     id: 6,
   },
   {
-    url: "/office.jpg",
+    url: "/office6.jpg",
     title: "Title 7",
     id: 7,
   },

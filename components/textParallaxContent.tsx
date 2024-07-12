@@ -61,7 +61,7 @@ const StickyImage = ({ imgPath }: { imgPath: string }) => {
         className="sticky z-0 overflow-hidden rounded-3xl"
       >
         <motion.div
-          className="absolute inset-0 bg-neutral-950/70"
+          className="absolute inset-0 bg-primary/30"
           style={{
             opacity,
           }}
@@ -101,7 +101,7 @@ const OverlayCopy = ({
         </p>
         <p className="text-center text-xl font-normal md:text-4xl">{subheading}</p>
         <div className="flex gap-10 mt-10">
-          <Button text="Kaffebar" bgcolor="#799ff2" link="/"/>
+          <Button text="Kaffebar" bgcolor="#39592c" link="/"/>
           <Button text="Kontorfællesskab" bgcolor="#39592c" link="/"/>
         </div>
       </motion.div>

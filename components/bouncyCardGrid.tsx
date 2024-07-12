@@ -10,9 +10,9 @@ export const BouncyCardsFeatures = () => {
     <section className="mx-auto max-w-7xl px-4 mt-10 text-black">
       <div className="mb-12 flex flex-col items-center gap-12">
         <h2 className="text-4xl font-bold md:text-5xl">
-          Kontorplads i <span className="text-[#39592c]">hyggelige omgivelser</span> 
+          Kontorpladser i <span className="text-[#39592c]">hyggelige omgivelser</span> 
         </h2>
-        <p className="text-slate-800 font-bold max-w-lg mb-10">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab</p>
+        <p className="text-slate-800 font-bold max-w-lg mb-10">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
       </div>
       <div className="mb-10 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
@@ -24,7 +24,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/cactus.svg">Sociale arrangementer</CardTitle>
+          <CardTitle logoPath="/icons/leaves.svg">Sociale arrangementer</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-white">
               Fællesmorgenmad og andre gode aktiviteter
@@ -32,7 +32,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/flamingo.svg">Faste pladser</CardTitle>
+          <CardTitle logoPath="/icons/bush.svg">Faste pladser</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-white">
               Hævesænkebord, kontorstol, internet og bordlampe
@@ -42,7 +42,7 @@ export const BouncyCardsFeatures = () => {
       </div>
       <div className="grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/fox.svg">Adgang 24/7</CardTitle>
+          <CardTitle logoPath="/icons/leaves-2.svg">Adgang 24/7</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-white">
               Arbejd når det passer dig
@@ -50,7 +50,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/snow.svg">Et spændende community</CardTitle>
+          <CardTitle logoPath="/icons/tree.svg">Et spændende community</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <span className="block text-center font-semibold text-white">
                 Få og giv sparring med andre virksomheder og selvstændige
@@ -66,11 +66,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
       </div>
-      <div className="flex flex-col items-center mt-20">
-        <h2 className="text-2xl font-bold md:text-2xl">Kom forbi og få en kop kaffe</h2>
-        <p className="mb-5 text-slate-700 font-bold max-w-lg">Eller send os en mail og hør mere</p>
-        <Button text="Kontakt" bgcolor="#39592c" link="mailto:kontakt@epilog.dk"/>
-      </div>
+      
     </section>
   );
 };
