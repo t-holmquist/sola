@@ -3,7 +3,7 @@
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 
 export const BouncyCardsFeatures = () => {
   return (

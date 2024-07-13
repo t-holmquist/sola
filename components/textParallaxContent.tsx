@@ -2,7 +2,8 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode, useRef } from "react";
-import { Button } from "./button";
+import { Button } from "./ui/button";
+import { TextGenerateEffect } from "./ui/textGenerateEffect";
 
 const IMG_PADDING = 12;
 
@@ -99,7 +100,7 @@ const OverlayCopy = ({
         <h1 className="text-center font-extrabold text-6xl md:mb-4 md:text-[200px]">
           {heading}
         </h1>
-        <h2 className="text-center text-xl font-normal md:text-3xl">{subheading}</h2>
+        <TextGenerateEffect words={subheading} className="text-center text-xl font-normal md:text-3xl"/>
         <div className="flex gap-10 mt-10">
           <Button text="Gå til Kaffebar" className="bg-secondary" link="/"/>
         </div>
