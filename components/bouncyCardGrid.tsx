@@ -9,10 +9,10 @@ export const BouncyCardsFeatures = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 mt-20 text-black">
       <div className="mb-12 flex flex-col items-center text-center gap-12">
-        <h2 className="text-3xl font-bold md:text-4xl">
+        <h2 className="text-3xl font-bold md:text-7xl max-w-3xl">
           Kontorpladser i <span className="text-[#39592c]">hyggelige omgivelser</span> 
         </h2>
-        <p className="mb-20 text-slate-800 font-bold max-w-lg">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
+        <p className="mb-20 text-black font-bold max-w-lg">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
       </div>
       <div className="mb-10 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
