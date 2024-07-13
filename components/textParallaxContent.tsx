@@ -26,7 +26,7 @@ export const TextParallaxContent = ({
           paddingRight: IMG_PADDING,
         }}
       >
-        <div className="relative h-[150vh]">
+        <div className="relative h-[100vh]">
           <StickyImage imgPath={imgPath} />
           <OverlayCopy heading={heading} subheading={subheading} />
         </div>
@@ -58,7 +58,7 @@ const StickyImage = ({ imgPath }: { imgPath: string }) => {
           scale,
         }}
         ref={targetRef}
-        className="sticky z-0 overflow-hidden rounded-3xl"
+        className="relative z-0 overflow-hidden rounded-3xl"
       >
         <motion.div
           className="absolute inset-0 bg-black/40"
