@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = localFont({
+  src: './OpenSans-VariableFont_wdth,wght.ttf',
+  display: 'swap',
+  variable: '--font-sans',
+})
+
+const alternateGothic = localFont({
+  src: './alternate-gothic-comp-atf-black.otf',
+  display: 'swap',
+  variable: '--font-gothic',
+})
 
 export const metadata: Metadata = {
-  title: "Sola",
+  title: "SOLA",
   description: "Kaffebar og kontorfællesskab",
 };
 
@@ -16,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${openSans.variable} ${alternateGothic.variable}`}>{children}</body>
     </html>
   );
 }

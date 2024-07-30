@@ -20,7 +20,11 @@ const config: Config = {
         secondary2: '#bb3f2c',
         accent: '#005da1',
         background: '#f0efd6',
-      }
+      },
+      fontFamily: {
+        sans: ['var(--font-sans)'],
+        gothic: ['var(--font-gothic)'],
+      },
     },
   },
   plugins: [],

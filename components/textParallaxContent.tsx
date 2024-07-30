@@ -97,10 +97,14 @@ const OverlayCopy = ({
         ref={targetRef}
         className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
       >
-        <h1 className="text-center font-extrabold text-6xl md:mb-4 md:text-[200px]">
-          {heading}
-        </h1>
-        <TextGenerateEffect words={subheading} className="text-center text-xl font-bold md:text-3xl"/>
+        {/* div fixes height of font on large devices */}
+        <div className="lg:h-64">
+          <h1 className="text-center font-gothic text-9xl md:text-[300px]">
+            {heading}
+          </h1>
+        </div>
+        
+        <TextGenerateEffect words={subheading} className="text-center text-xl font-sans md:text-3xl"/>
         <div className="flex gap-10 mt-10">
           <Button text="Gå til Kaffebar" className="bg-secondary" link="/"/>
         </div>
