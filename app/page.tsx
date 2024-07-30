@@ -1,7 +1,7 @@
 import { BouncyCardsFeatures } from "@/components/bouncyCardGrid";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
-import HorizontalScrollContent from "@/components/horizontalScrollCarousel";
+import Gallery from "@/components/gallery";
 import Pricing from "@/components/pricing";
 import { TextParallaxContent } from "@/components/textParallaxContent";
 
@@ -18,7 +18,7 @@ export default function Home() {
       </TextParallaxContent>
       <BouncyCardsFeatures />
       <Pricing />
-      <HorizontalScrollContent /> 
+      <Gallery /> 
       <Contact />
       <Footer />
       
