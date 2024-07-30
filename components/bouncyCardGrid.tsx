@@ -7,33 +7,33 @@ import Image from "next/image";
 export const BouncyCardsFeatures = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 mt-20 text-black">
-      <div className="mb-12 flex flex-col items-center text-center gap-12">
-        <h2 className="text-3xl font-bold md:text-7xl max-w-3xl">
-          Kontorpladser i <span className="text-[#39592c]">hyggelige omgivelser</span> 
+      <div className="mb-12 flex flex-col items-center text-center gap-8">
+        <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
+          KONTORPLADSER I <span className="text-[#39592c]">HYGGELIGE OMGIVELSER</span> 
         </h2>
         <p className="mb-20 text-black font-sans max-w-lg">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
       </div>
       <div className="mb-10 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/branch.svg">20+ Iværksættere</CardTitle>
+          <CardTitle logoPath="/icons/branch.svg">20+ IVÆRKSÆTTERE</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-bold text-white">
+            <span className="block text-center font-sans text-white">
               Bliv en del af et hyggeligt fællesskab
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/leaves.svg">Sociale arrangementer</CardTitle>
+          <CardTitle logoPath="/icons/leaves.svg">SOCIALE ARRANGEMENTER</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-white">
+            <span className="block text-center font-sans text-white">
               Fællesmorgenmad og andre gode aktiviteter
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/bush.svg">Faste pladser</CardTitle>
+          <CardTitle logoPath="/icons/bush.svg">FASTER PLADSER</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-white">
+            <span className="block text-center font-sans text-white">
               Hævesænkebord, kontorstol, internet og bordlampe
             </span>
           </div>
@@ -41,25 +41,25 @@ export const BouncyCardsFeatures = () => {
       </div>
       <div className="grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/leaves-2.svg">Adgang 24/7</CardTitle>
+          <CardTitle logoPath="/icons/leaves-2.svg">ADGANG 24/7</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-white">
+            <span className="block text-center font-sans text-white">
               Arbejd når det passer dig
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/tree.svg">Spændende community</CardTitle>
+          <CardTitle logoPath="/icons/tree.svg">SPÆNDENDE COMMUNITY</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-white">
+            <span className="block text-center font-sans text-white">
                 Få og giv sparring med andre virksomheder og selvstændige
             </span>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/cactus-2.svg">Mødelokale</CardTitle>
+          <CardTitle logoPath="/icons/cactus-2.svg">MØDELOKALE</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <span className="block text-center font-semibold text-white">
+            <span className="block text-center font-sans text-white">
               13m2 med bord, whiteboard, internet og fladskærms-tv
             </span>
           </div>
@@ -91,7 +91,7 @@ const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath: stri
   return (
     <div className="flex items-center justify-center gap-2">
         <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
-        <h3 className="text-2xl font-semibold">{children}</h3>
+        <h3 className="text-4xl font-gothic">{children}</h3>
     </div>
   );
 };

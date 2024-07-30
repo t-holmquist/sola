@@ -99,14 +99,14 @@ const OverlayCopy = ({
       >
         {/* div fixes height of font on large devices */}
         <div className="lg:h-64">
-          <h1 className="text-center font-gothic text-9xl md:text-[300px]">
+          <h1 className="text-center text-white font-gothic text-9xl md:text-[300px]">
             {heading}
           </h1>
         </div>
         
-        <TextGenerateEffect words={subheading} className="text-center text-xl font-sans md:text-3xl"/>
+        <TextGenerateEffect words={subheading} className="text-center text-white text-xl font-sans md:text-3xl"/>
         <div className="flex gap-10 mt-10">
-          <Button text="Gå til Kaffebar" className="bg-secondary" link="/"/>
+          <Button text="Gå til Kaffebar" className="bg-secondary font-sans" link="/"/>
         </div>
       </motion.div>
     );
