@@ -35,16 +35,13 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/bush.svg">GOD BELIGGENHED</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-              <div className="flex justify-center">
-                <ul className="font-sans text-white list-disc">
-                  <li className="text-white font-normal">Tæt på livlige og grønne Bavnehøj Allé.</li>
-                  <li className="text-white font-normal">Bus, s-tog og motorvejsarkørsel</li>
-                  <li className="text-white font-normal">BaneGaarden og Carlsberg Byen</li>
-                  <li className="text-white font-normal">Gode spisesteder</li>
-                </ul>
-              </div>
+          <CardTitle logoPath="/icons/cactus-2.svg">MØDELOKALE</CardTitle>
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <div className="flex justify-center">
+              <span className="block text-center font-sans text-white">
+                Rummeligt mødelokale med fladskærm og whiteboard til præsentationer
+              </span>
+            </div>
           </div>
         </BounceCard>
       </div>
@@ -53,11 +50,23 @@ export const BouncyCardsFeatures = () => {
           <CardTitle logoPath="/icons/leaves-2.svg">RUMMELIGT KONTOR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <ul className="font-sans text-white list-disc">
-                <li className="text-white font-normal">50 kvm kontor med højt til loftet!</li>
-                <li className="text-white font-normal">1000/1000 internet og print</li>
-                <li className="text-white font-normal">Gratis kaffe og te</li>
-                <li className="text-white font-normal">Hyggelig, grøn baggård</li>
+              <ul className="font-sans text-white">
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">50 kvm kontor med højt til loftet!</li>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">1000/1000 internet og print</li>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Gratis kaffe og te</li>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Hyggelig, grøn baggård</li>
+                </div>
               </ul>
             </div>
           </div>
@@ -73,13 +82,28 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/cactus-2.svg">MØDELOKALE</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <div className="flex justify-center">
-              <span className="block text-center font-sans text-white">
-                Rummeligt mødelokale med fladskærm og whiteboard til præsentationer
-              </span>
-            </div>
+          <CardTitle logoPath="/icons/bush.svg">GOD BELIGGENHED</CardTitle>
+          <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+              <div className="flex justify-center">
+                <ul className="font-sans text-white">
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Tæt på livlige og grønne Bavnehøj Allé</li>
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Bus, s-tog og motorvejsarkørsel</li>
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">BaneGaarden og Carlsberg Byen</li>
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Gode spisesteder</li>
+                  </div>
+                </ul>
+              </div>
           </div>
         </BounceCard>
       </div>
