@@ -1,7 +1,7 @@
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Gallery from "@/components/gallery";
-import { MenuGrid } from "@/components/menuGrid";
+import { KaffeBarGrid } from "@/components/kaffebarGrid";
 import { TextParallaxContent } from "@/components/textParallaxContent";
 
 
@@ -14,15 +14,14 @@ export default function Home() {
     heading="SOLA"
     href="/"
     buttonText="Gå til Kontorfælleskab"
-    buttonColor="bg-[#39592c]"
+    buttonColor="bg-secondary"
     animationType="page-transition-kontor"
       >
         <></>
       </TextParallaxContent>
-      <MenuGrid />
+      <KaffeBarGrid />
       <Gallery /> 
-      <Contact />
-      <Footer />
+      <Footer footerColor="bg-secondary"/>
     </main>
   )
 }

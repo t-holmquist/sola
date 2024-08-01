@@ -1,10 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const Footer = () => {
+const Footer = ({
+    footerColor,
+}: {
+    footerColor: string;
+}) => {
   return (
     <div className="mt-24">
-        <div className="bg-primary rounded-t-2xl">
+        <div className={`${footerColor} rounded-t-2xl`}>
             <div className="flex items-center justify-between p-6">
                 <div className="flex">
                     <p className="text-white text-3xl font-gothic">SOLA</p>

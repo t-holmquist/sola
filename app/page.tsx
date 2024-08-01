@@ -15,7 +15,7 @@ export default function Home() {
         heading="SOLA"
         href="/kaffebar"
         buttonText="Gå til Kaffebar"
-        buttonColor="bg-[#af3523]"
+        buttonColor="bg-primary"
         animationType="page-transition-kaffebar"
       >
         <></>
@@ -24,7 +24,7 @@ export default function Home() {
       <Pricing />
       <Gallery /> 
       <Contact />
-      <Footer />
+      <Footer footerColor="bg-primary" />
       
     </main>
   );

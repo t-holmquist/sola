@@ -122,7 +122,7 @@ const OverlayCopy = ({
         
         <TextGenerateEffect words={subheading} className="text-center text-white text-xl font-sans md:text-3xl"/>
         <div className="flex gap-10 mt-10">
-          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl`}>{buttonText}</AnimationLink>
+          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl hover:scale-105 transition-all`}>{buttonText}</AnimationLink>
         </div>
       </motion.div>
     );
