@@ -7,13 +7,7 @@ import Image from "next/image";
 export const KaffeBarGrid = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 mt-20 text-black">
-      <div className="mb-12 flex flex-col items-center text-center gap-8">
-        <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
-          KOM INDENFOR OG NYD <span className="text-secondary">LÆKKER KAFFE</span> 
-        </h2>
-        <p className="mb-20 text-black font-sans max-w-lg">Vores hyggelig kaffebar byder på lækker kaffe, forfriskelser og bagværk</p>
-      </div>
-      <div className="mb-10 grid grid-cols-12 gap-4">
+      <div className="mb-24 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle logoPath="/icons/branch.svg">VI LIGGER I SYDHAVN</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
@@ -45,7 +39,12 @@ export const KaffeBarGrid = () => {
           </div>
         </BounceCard>
       </div>
-      
+      <div className="flex flex-col items-center text-center gap-8">
+        <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
+          KOM INDENFOR OG NYD <span className="text-secondary">LÆKKER KAFFE</span> 
+        </h2>
+        <p className="mb-20 text-black font-sans max-w-lg">Vores hyggelig kaffebar byder på lækker kaffe, forfriskelser og bagværk</p>
+      </div>
     </section>
   );
 };

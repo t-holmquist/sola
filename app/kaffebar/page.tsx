@@ -1,6 +1,5 @@
-import Contact from "@/components/contact";
 import Footer from "@/components/footer";
-import Gallery from "@/components/gallery";
+import KaffebarGallery from "@/components/kaffebarGallery";
 import { KaffeBarGrid } from "@/components/kaffebarGrid";
 import { TextParallaxContent } from "@/components/textParallaxContent";
 
@@ -20,7 +19,7 @@ export default function Home() {
         <></>
       </TextParallaxContent>
       <KaffeBarGrid />
-      <Gallery /> 
+      <KaffebarGallery /> 
       <Footer footerColor="bg-secondary"/>
     </main>
   )
