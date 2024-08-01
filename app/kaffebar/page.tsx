@@ -1,7 +1,7 @@
-import { BouncyCardsFeatures } from "@/components/bouncyCardGrid";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Gallery from "@/components/gallery";
+import { MenuGrid } from "@/components/menuGrid";
 import { TextParallaxContent } from "@/components/textParallaxContent";
 
 
@@ -9,16 +9,17 @@ export default function Home() {
   return (
     <main className="bg-[#f0efd6]">
     <TextParallaxContent
-    imgPath="/office2.jpg"
-    subheading="Kaffebar og kontorfællesskab"
+    imgPath="/office5.jpg"
+    subheading="Velkommen til vores hyggelige kaffebar"
     heading="SOLA"
     href="/"
-    buttonText="Gå til Kontor"
+    buttonText="Gå til Kontorfælleskab"
+    buttonColor="bg-[#39592c]"
     animationType="page-transition-kontor"
       >
         <></>
       </TextParallaxContent>
-      <BouncyCardsFeatures />
+      <MenuGrid />
       <Gallery /> 
       <Contact />
       <Footer />

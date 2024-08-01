@@ -11,10 +11,11 @@ export default function Home() {
     <main className="bg-[#f0efd6]">
       <TextParallaxContent
         imgPath="/office.jpg"
-        subheading="Kaffebar og kontorfællesskab"
+        subheading="Bliv en del af kontorfællesskabet"
         heading="SOLA"
         href="/kaffebar"
         buttonText="Gå til Kaffebar"
+        buttonColor="bg-[#af3523]"
         animationType="page-transition-kaffebar"
       >
         <></>

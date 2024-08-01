@@ -4,14 +4,14 @@ import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export const BouncyCardsFeatures = () => {
+export const MenuGrid = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 mt-20 text-black">
       <div className="mb-12 flex flex-col items-center text-center gap-8">
         <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
-          KONTORPLADSER I <span className="text-[#39592c]">HYGGELIGE OMGIVELSER</span> 
+          KOM INDENFOR OG NYD <span className="text-[#39592c]">LÆKKER KAFFE</span> 
         </h2>
-        <p className="mb-20 text-black font-sans max-w-lg">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
+        <p className="mb-20 text-black font-sans max-w-lg">Vores hyggelig kaffebar byder på lækker kaffe og forfriskelser og bagværk</p>
       </div>
       <div className="mb-10 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
@@ -51,10 +51,22 @@ export const BouncyCardsFeatures = () => {
           <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <ul className="font-sans text-white">
-                <li className="text-white font-normal text-center">50 kvm kontor med højt til loftet!</li>
-                <li className="text-white font-normal text-center">1000/1000 internet og print</li>
-                <li className="text-white font-normal text-center">Gratis kaffe og te</li>
-                <li className="text-white font-normal text-center">Hyggelig, grøn baggård</li>
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">50 kvm kontor med højt til loftet!</li>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">1000/1000 internet og print</li>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Gratis kaffe og te</li>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Hyggelig, grøn baggård</li>
+                </div>
               </ul>
             </div>
           </div>
@@ -73,11 +85,23 @@ export const BouncyCardsFeatures = () => {
           <CardTitle logoPath="/icons/bush.svg">GOD BELIGGENHED</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
               <div className="flex justify-center">
-                <ul className="font-sans text-white"> 
-                    <li className="text-white font-normal text-center">Tæt på livlige og grønne Bavnehøj Allé</li>
-                    <li className="text-white font-normal text-center">Bus, s-tog og motorvejsarkørsel</li>
-                    <li className="text-white font-normal text-center">BaneGaarden og Carlsberg Byen</li>
-                    <li className="text-white font-normal text-center">Gode spisesteder</li>
+                <ul className="font-sans text-white">
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Tæt på livlige og grønne Bavnehøj Allé</li>
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Bus, s-tog og motorvejsarkørsel</li>
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">BaneGaarden og Carlsberg Byen</li>
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <Image src='/icons/star.svg' width={15} height={15} alt="star"/>
+                    <li className="text-white font-normal">Gode spisesteder</li>
+                  </div>
                 </ul>
               </div>
           </div>

@@ -12,6 +12,7 @@ export const TextParallaxContent = ({
     subheading,
     heading,
     buttonText,
+    buttonColor,
     animationType,
     href,
     children,
@@ -20,6 +21,7 @@ export const TextParallaxContent = ({
     subheading: string;
     heading: string;
     animationType: string;
+    buttonColor: string;
     buttonText: string;
     href: string;
     children: ReactNode;
@@ -35,7 +37,7 @@ export const TextParallaxContent = ({
       >
         <div className="relative h-[100vh]">
           <StickyImage imgPath={imgPath} />
-          <OverlayCopy heading={heading} subheading={subheading} href={href} animationType={animationType} buttonText={buttonText}/>
+          <OverlayCopy heading={heading} subheading={subheading} href={href} animationType={animationType} buttonText={buttonText} buttonColor={buttonColor}/>
         </div>
         {children}
       </div>
@@ -82,12 +84,14 @@ const OverlayCopy = ({
     subheading,
     heading,
     buttonText,
+    buttonColor,
     animationType,
     href,
   }: {
     subheading: string;
     heading: string;
     buttonText: string;
+    buttonColor: string;
     animationType: string;
     href: string;
   }) => {
@@ -118,7 +122,7 @@ const OverlayCopy = ({
         
         <TextGenerateEffect words={subheading} className="text-center text-white text-xl font-sans md:text-3xl"/>
         <div className="flex gap-10 mt-10">
-          <AnimationLink animationType={animationType} href={href} className="font-sans bg-secondary whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl">{buttonText}</AnimationLink>
+          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl`}>{buttonText}</AnimationLink>
         </div>
       </motion.div>
     );
