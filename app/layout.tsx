@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${alternateGothic.variable}`}>{children}</body>
+      <body className={`${openSans.variable} ${alternateGothic.variable} bg-[#f0efd6]`}>{children}</body>
     </html>
   );
 }

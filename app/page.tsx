@@ -13,6 +13,9 @@ export default function Home() {
         imgPath="/office.jpg"
         subheading="Kaffebar og kontorfællesskab"
         heading="SOLA"
+        href="/kaffebar"
+        buttonText="Gå til Kaffebar"
+        animationType="page-transition-kaffebar"
       >
         <></>
       </TextParallaxContent>

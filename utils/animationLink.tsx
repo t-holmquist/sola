@@ -8,6 +8,7 @@ interface AnimationLinkProps extends LinkProps {
     children: ReactNode;
     href: string;
     className: string;
+    animationType: string;
 }
 
 function sleep(ms: number): Promise<void> {
@@ -17,6 +18,7 @@ function sleep(ms: number): Promise<void> {
 const AnimationLink = ({
     children,
     href,
+    animationType,
     className,
     ...props
 }: AnimationLinkProps ) => {
@@ -26,15 +28,15 @@ const AnimationLink = ({
         e.preventDefault();
 
         const body = document.querySelector('body');
-        body?.classList.add('page-transition');
+        body?.classList.add(animationType);
 
-        await sleep(400)
+        await sleep(300)
 
         router.push(href);
 
-        await sleep(400)
+        await sleep(300)
 
-        body?.classList.remove('page-transition');
+        body?.classList.remove(animationType);
     }
 
   return (

@@ -19,7 +19,7 @@
 body {
   transition-property: opacity, background, transform, filter;
   transition-timing-function: ease-in-out;
-  transition-duration: 500ms;
+  transition-duration: 300ms;
 
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -32,10 +32,18 @@ body {
 
 
 
-.page-transition {
+.page-transition-kaffebar {
   opacity: 0;
-  transform: translateY(50px);
-  filter: blur(12px);
+  transform: rotate(1deg);
+  background: #af3523;
+  
+}
+
+.page-transition-kontor {
+  opacity: 0;
+  transform: rotate(-1deg);
+  background: #39592c;
+  
 }
 
 @layer utilities {
