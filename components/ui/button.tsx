@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export const Button = ( { text, className, link } : { text: string, className: string, link: string } ) => {
+export const Button = ( { text, className, link } : { text: string, className?: string, link: string } ) => {
     return (
         <Link href={link}>
           <motion.button

@@ -2,8 +2,8 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode, useRef } from "react";
-import { Button } from "./ui/button";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
+import AnimationLink from "@/utils/animationLink";
 
 const IMG_PADDING = 12;
 
@@ -106,7 +106,7 @@ const OverlayCopy = ({
         
         <TextGenerateEffect words={subheading} className="text-center text-white text-xl font-sans md:text-3xl"/>
         <div className="flex gap-10 mt-10">
-          <Button text="Gå til Kaffebar" className="bg-secondary font-sans" link="/"/>
+          <AnimationLink href="/kaffebar" className="font-sans bg-secondary whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl">Gå til Kaffebar</AnimationLink>
         </div>
       </motion.div>
     );
