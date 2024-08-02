@@ -34,14 +34,13 @@ body {
 
 .page-transition-kaffebar {
   opacity: 0;
-  transform: rotate(1deg);
+  transform: translateY(-40px);
   background: #af3523;
-  
 }
 
 .page-transition-kontor {
   opacity: 0;
-  transform: rotate(-1deg);
+  transform: translateY(-40px);
   background: #39592c;
   
 }

@@ -8,10 +8,10 @@ import { TextParallaxContent } from "@/components/textParallaxContent";
 
 export default function Home() {
   return (
-    <main className="bg-[#f0efd6]">
+    <main className="bg-[#f0efd6] flex flex-col gap-20">
       <TextParallaxContent
         imgPath="/office.jpg"
-        subheading="Kontorfællesskab og Kaffebar"
+        subheading="Kaffebar og Kontorfællesskab"
         heading="SOLA"
         href="/kaffebar"
         buttonText="Gå til Kaffebar"

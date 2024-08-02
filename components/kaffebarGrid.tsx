@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export const KaffeBarGrid = () => {
   return (
-    <section className="mx-auto max-w-7xl px-4 mt-16 text-black">
-      <div className="mb-52 grid grid-cols-12 gap-4">
+    <section className="mx-auto max-w-7xl px-4 mt-[80px] text-black">
+      <div className="grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>VI LIGGER I SYDHAVN</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
@@ -39,8 +39,8 @@ export const KaffeBarGrid = () => {
           </div>
         </BounceCard>
       </div>
-      <div className="flex relative flex-col items-center text-center gap-8">
-        <Image src='/line-drawing2.png' width={300} height={200} alt="people-line-drawing" className="absolute hidden sm:block -left-16 -top-28"/>
+      <div className="flex relative flex-col items-center text-center gap-8 mt-[240px]">
+        <Image src='/line-drawing2.png' width={320} height={200} alt="people-line-drawing" className="absolute hidden sm:block -left-16 -top-28"/>
         <Image src='/line-drawing2.png' width={150} height={120} alt="people-line-drawing" className="absolute sm:hidden left-8 -top-32"/>
 
         <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">

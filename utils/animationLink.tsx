@@ -30,11 +30,11 @@ const AnimationLink = ({
         const body = document.querySelector('body');
         body?.classList.add(animationType);
 
-        await sleep(300)
+        await sleep(350)
 
         router.push(href);
 
-        await sleep(300)
+        await sleep(350)
 
         body?.classList.remove(animationType);
     }

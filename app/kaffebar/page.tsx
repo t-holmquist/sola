@@ -9,7 +9,7 @@ export default function Home() {
     <main className="bg-[#f0efd6]">
     <TextParallaxContent
     imgPath="/office5.jpg"
-    subheading="Velkommen til vores hyggelige kaffebar"
+    subheading="Kaffebar og Kontorfællesskab"
     heading="SOLA"
     href="/"
     buttonText="Gå til Kontorfælleskab"

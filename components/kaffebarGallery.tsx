@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const KaffebarGallery = () => {
   return (
-    <div className="grid grid-cols-12 gap-8 sm:gap-4 px-5 sm:px-20 sm:mt-20">
+    <div className="grid grid-cols-12 gap-8 sm:gap-4 px-5 sm:px-32 sm:mt-[140px] mb-[200px]">
         <Image
         src='/office6.jpg'
         width={1220}
