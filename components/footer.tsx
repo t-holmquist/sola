@@ -9,22 +9,22 @@ const Footer = ({
   return (
     <div className="mt-24">
         <div className={`${footerColor} rounded-t-2xl`}>
-            <div className="flex items-center justify-between p-6">
+            <div className="flex flex-col sm:flex-row items-center justify-between p-6">
                 <div className="flex">
-                    <p className="text-white text-3xl font-gothic">SOLA</p>
+                    <Link href='/' className="text-white text-4xl sm:text-3xl font-gothic">SOLA</Link>
                 </div>
-                <div className="flex items-center gap-5">
+                <div className="flex flex-col sm:flex-row items-center gap-5 mt-[20px] sm:mt-0">
                     <div className="flex gap-2">
                         <Image src="/icons/home.svg" width={15} height={15} alt="address"/>
-                        <p className="text-white font-sans text-[12px]">Johan Kellers Vej 1, 2450 København</p>
+                        <Link href='https://maps.app.goo.gl/XxDL68K5vBXtkUu98' className="text-white font-sans sm:text-[12px]">Johan Kellers Vej 1, 2450 København</Link>
                     </div>
                     <div className="flex gap-2">
                         <Image src="/icons/phone.svg" width={15} height={15} alt="address"/>
-                        <p className="text-white font-sans text-[12px]">28 57 68 43</p>
+                        <Link href={`tel:${28576843}`} className="text-white font-sans sm:text-[12px]">28 57 68 43</Link>
                     </div>
                     <div className="flex gap-2">
                         <Image src="/icons/email.svg" width={15} height={15} alt="address"/>
-                        <p className="text-white font-sans text-[12px]">kontakt@sola.dk</p>
+                        <Link href='mailto:kontakt@epilog.dk' className="text-white font-sans sm:text-[12px]">kontakt@sola.dk</Link>
                     </div>
                     <div className="flex gap-2">
                         <Link href="/">
