@@ -15,7 +15,7 @@ export const BouncyCardsFeatures = () => {
       </div>
       <div className="mb-10 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/branch.svg">SPÆNDENDE COMMUNITY</CardTitle>
+          <CardTitle>SPÆNDENDE COMMUNITY</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -25,7 +25,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/leaves.svg">ÅBENT 24/7</CardTitle>
+          <CardTitle>ÅBENT 24/7</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -35,7 +35,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/cactus-2.svg">MØDELOKALE</CardTitle>
+          <CardTitle>MØDELOKALE</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -47,7 +47,7 @@ export const BouncyCardsFeatures = () => {
       </div>
       <div className="grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/leaves-2.svg">RUMMELIGT KONTOR</CardTitle>
+          <CardTitle>RUMMELIGT KONTOR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <ul className="font-sans text-white">
@@ -60,7 +60,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/tree.svg">KAFFEBAR</CardTitle>
+          <CardTitle>KAFFEBAR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -70,7 +70,7 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/bush.svg">GOD BELIGGENHED</CardTitle>
+          <CardTitle>GOD BELIGGENHED</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
               <div className="flex justify-center">
                 <ul className="font-sans text-white"> 
@@ -105,11 +105,13 @@ const BounceCard = ({
   );
 };
 
-const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath: string }) => {
+const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath?: string }) => {
   return (
     <div className="flex items-center justify-center gap-2">
-        <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
-        <h3 className="text-4xl font-gothic">{children}</h3>
+        {logoPath && (
+          <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
+        )}
+        <h3 className="text-5xl font-gothic">{children}</h3>
     </div>
   );
 };

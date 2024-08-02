@@ -9,7 +9,7 @@ export const KaffeBarGrid = () => {
     <section className="mx-auto max-w-7xl px-4 mt-16 text-black">
       <div className="mb-52 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/branch.svg">VI LIGGER I SYDHAVN</CardTitle>
+          <CardTitle>VI LIGGER I SYDHAVN</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -19,7 +19,7 @@ export const KaffeBarGrid = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/leaves.svg">ÅBNINGSTIDER</CardTitle>
+          <CardTitle>ÅBNINGSTIDER</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -29,7 +29,7 @@ export const KaffeBarGrid = () => {
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle logoPath="/icons/cactus-2.svg">DET SERVERER VI</CardTitle>
+          <CardTitle>DET SERVERER VI</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -69,11 +69,13 @@ const BounceCard = ({
   );
 };
 
-const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath: string }) => {
+const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath?: string }) => {
   return (
     <div className="flex items-center justify-center gap-2">
-        <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
-        <h3 className="text-4xl font-gothic">{children}</h3>
+        {logoPath && (
+          <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
+        )}
+        <h3 className="text-5xl font-gothic">{children}</h3>
     </div>
   );
 };

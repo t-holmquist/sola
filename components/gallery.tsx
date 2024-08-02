@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <div className="flex justify-center py-28 px-5">
+    <div className="flex justify-center mt-32 mb-72 px-5">
         <Image
         src='/office-wide.jpg'
         width={1220}
