@@ -27,7 +27,7 @@ const Footer = ({
                         <Link href='mailto:kontakt@epilog.dk' className="text-white font-sans sm:text-[12px]">kontakt@sola.dk</Link>
                     </div>
                     <div className="flex gap-2">
-                        <Link href="/">
+                        <Link href="/https://www.instagram.com/solacph">
                             <Image src="/icons/instagram.svg" width={32} height={32} alt="address" className="bg-secondary p-2 rounded-full"/>
                         </Link>
                     </div>
