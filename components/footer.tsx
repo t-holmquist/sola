@@ -7,7 +7,7 @@ const Footer = ({
     footerColor: string;
 }) => {
   return (
-    <div className="mt-24">
+    <div className="mt-12 sm:mt-24">
         <div className={`${footerColor} rounded-t-2xl`}>
             <div className="flex flex-col sm:flex-row items-center justify-between p-6">
                 <div className="flex">

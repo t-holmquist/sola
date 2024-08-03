@@ -13,7 +13,7 @@ export const BouncyCardsFeatures = () => {
         </h2>
         <p className="text-black font-sans max-w-lg">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
       </div>
-      <div className="mt-[80px] mb-10 grid grid-cols-12 gap-4">
+      <div className="mt-[80px] mb-10 grid grid-cols-12 gap-8 sm:gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>RUMMELIGT KONTOR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
@@ -51,14 +51,14 @@ export const BouncyCardsFeatures = () => {
           </div>
         </BounceCard>
       </div>
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-12 gap-8 sm:gap-4">
         
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>KAFFEBAR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
-                  Du får god kaffe, bagværk og andre lækre sager, samt rabatordning i vores kaffebar
+                  Du får god kaffe, bagværk og andre lækre sager, samt rabatordning
               </span>
             </div>
           </div>
@@ -107,7 +107,7 @@ const BounceCard = ({
 
 const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath?: string }) => {
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className="flex items-center justify-center gap-2 text-center">
         {logoPath && (
           <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
         )}
