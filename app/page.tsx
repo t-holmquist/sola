@@ -17,6 +17,7 @@ export default function Home() {
         buttonText="Gå til Kaffebar"
         buttonColor="bg-primary"
         animationType="page-transition-kaffebar"
+        heroImageAlign="bg-[62%]"
       >
         <></>
       </TextParallaxContent>

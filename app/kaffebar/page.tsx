@@ -15,6 +15,7 @@ export default function Home() {
     buttonText="Gå til Kontorfælleskab"
     buttonColor="bg-secondary"
     animationType="page-transition-kontor"
+    heroImageAlign="bg-[22%]"
       >
         <></>
       </TextParallaxContent>

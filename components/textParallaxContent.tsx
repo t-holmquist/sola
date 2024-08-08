@@ -16,6 +16,7 @@ export const TextParallaxContent = ({
     animationType,
     href,
     children,
+    heroImageAlign,
   }: {
     imgPath: string;
     subheading: string;
@@ -25,6 +26,7 @@ export const TextParallaxContent = ({
     buttonText: string;
     href: string;
     children: ReactNode;
+    heroImageAlign: string;
   }) => {
 
 
@@ -36,7 +38,7 @@ export const TextParallaxContent = ({
         }}
       >
         <div className="relative h-[100vh]">
-          <StickyImage imgPath={imgPath} />
+          <StickyImage imgPath={imgPath} heroImageAlign={heroImageAlign} />
           <OverlayCopy heading={heading} subheading={subheading} href={href} animationType={animationType} buttonText={buttonText} buttonColor={buttonColor}/>
         </div>
         {children}
@@ -45,7 +47,8 @@ export const TextParallaxContent = ({
   };
 
 
-const StickyImage = ({ imgPath }: { imgPath: string }) => {
+const StickyImage = ({ imgPath, heroImageAlign }: { imgPath: string, heroImageAlign: string; }) => {
+  
 
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -61,13 +64,12 @@ const StickyImage = ({ imgPath }: { imgPath: string }) => {
         style={{
           backgroundImage: `url(${imgPath})`,
           backgroundSize: "cover",
-          backgroundPosition: "right",
           height: `calc(100vh - ${IMG_PADDING * 2}px)`,
           top: IMG_PADDING,
           scale,
         }}
         ref={targetRef}
-        className="relative z-0 overflow-hidden rounded-3xl"
+        className={`relative z-0 overflow-hidden rounded-3xl md:bg-right ${heroImageAlign}`}
       >
         <motion.div
           className="absolute inset-0 bg-black/10"
