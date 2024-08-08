@@ -61,7 +61,7 @@ const StickyImage = ({ imgPath }: { imgPath: string }) => {
         style={{
           backgroundImage: `url(${imgPath})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "right",
           height: `calc(100vh - ${IMG_PADDING * 2}px)`,
           top: IMG_PADDING,
           scale,
@@ -70,7 +70,7 @@ const StickyImage = ({ imgPath }: { imgPath: string }) => {
         className="relative z-0 overflow-hidden rounded-3xl"
       >
         <motion.div
-          className="absolute inset-0 bg-black/40"
+          className="absolute inset-0 bg-black/10"
           style={{
             opacity,
           }}

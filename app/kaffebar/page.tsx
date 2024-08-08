@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="bg-[#f0efd6]">
     <TextParallaxContent
-    imgPath="/office5.jpg"
+    imgPath="/Hero-kaffebar.webp"
     subheading="Kaffebar og Kontorfællesskab"
     heading="SOLA"
     href="/"

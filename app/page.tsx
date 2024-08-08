@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="bg-[#f0efd6] flex flex-col gap-20">
       <TextParallaxContent
-        imgPath="/office.jpg"
+        imgPath="/Hero-kontor.webp"
         subheading="Kaffebar og Kontorfællesskab"
         heading="SOLA"
         href="/kaffebar"
