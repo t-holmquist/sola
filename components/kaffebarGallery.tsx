@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const KaffebarGallery = () => {
   return (
-    <div className="grid grid-cols-12 gap-8 sm:gap-4 px-5 sm:px-32 sm:mt-[140px] mb-[120px] sm:mb-[200px]">
+    <div className="grid grid-cols-12 gap-8 sm:gap-8 px-5 sm:px-32 sm:mt-[140px] mb-[120px] sm:mb-[200px]">
         <Image
         src='/kaffebar2.webp'
         width={1220}

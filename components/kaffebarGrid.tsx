@@ -42,17 +42,17 @@ export const KaffeBarGrid = () => {
       {/* Menu gallery */}
       <div className="flex-col flex sm:flex-row items-center justify-center gap-8 sm:gap-4 px-5 sm:px-32 mt-24 sm:mt-[120px] mb-[100px] sm:mb-[200px]">
         <Image
-        src='/menu1.webp'
-        width={300}
-        height={600}
-        alt="community"
+        src='/menuen1.webp'
+        width={600}
+        height={1000}
+        alt="menu"
         className="rounded-2xl"
         />
         <Image
-        src='/menu2.webp'
-        width={300}
-        height={600}
-        alt="community"
+        src='/menuen2.webp'
+        width={600}
+        height={1000}
+        alt="menu"
         className="rounded-2xl"
         />
       </div>
