@@ -72,7 +72,7 @@ const StickyImage = ({ imgPath, heroImageAlign }: { imgPath: string, heroImageAl
         className={`relative z-0 overflow-hidden rounded-3xl md:bg-right ${heroImageAlign}`}
       >
         <motion.div
-          className="absolute inset-0 bg-black/10"
+          className="absolute inset-0 bg-black/20"
           style={{
             opacity,
           }}

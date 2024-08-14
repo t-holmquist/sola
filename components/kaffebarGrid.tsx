@@ -12,7 +12,7 @@ export const KaffeBarGrid = () => {
           <CardTitle>ÅBNINGSTIDER</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white">
+              <span className="block text-center font-sans text-white text-sm sm:text-base">
                 Vi har åbent onsdag-søndag fra 8-15
               </span>
             </div>
@@ -22,7 +22,7 @@ export const KaffeBarGrid = () => {
           <CardTitle>ADRESSEN</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white">
+              <span className="block text-center font-sans text-white text-sm sm:text-base">
                 Johan Kellers Vej 1, 2450 København SV
               </span>
             </div>
@@ -32,7 +32,7 @@ export const KaffeBarGrid = () => {
           <CardTitle>MENUEN</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white">
+              <span className="block text-center font-sans text-white text-sm sm:text-base">
                 God kaffe, bagværk og andre lækre sager i italiensk-inspirerede omgivelser
               </span>
             </div>
@@ -40,18 +40,18 @@ export const KaffeBarGrid = () => {
         </BounceCard>
       </div>
       {/* Menu gallery */}
-      <div className="flex-col flex sm:flex-row items-center justify-center gap-8 sm:gap-4 px-5 sm:px-32 mt-24 sm:mt-[120px] mb-[100px] sm:mb-[200px]">
+      <div className="flex-col flex sm:flex-row items-center justify-center gap-8 sm:gap-10 px-5 sm:px-32 mt-24 sm:mt-[120px] mb-[100px] sm:mb-[200px]">
         <Image
-        src='/menuen1.webp'
-        width={600}
-        height={1000}
+        src='/menu-drikke.webp'
+        width={450}
+        height={850}
         alt="menu"
         className="rounded-2xl"
         />
         <Image
-        src='/menuen2.webp'
-        width={600}
-        height={1000}
+        src='/menu-spise.webp'
+        width={450}
+        height={850}
         alt="menu"
         className="rounded-2xl"
         />
@@ -79,7 +79,7 @@ const BounceCard = ({
   return (
     <motion.div
       whileHover={{ scale: 0.95, rotate: "-1deg" }}
-      className={`group relative min-h-[240px] overflow-hidden rounded-2xl bg-slate-100 p-8 ${className}`}
+      className={`group relative min-h-[240px] overflow-hidden rounded-2xl bg-background2 p-8 ${className}`}
     >
       {children}
     </motion.div>

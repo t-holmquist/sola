@@ -20,6 +20,7 @@ const config: Config = {
         secondary2: '#bb3f2c',
         accent: '#005da1',
         background: '#f0efd6',
+        background2: '#f4f4ef',
       },
       fontFamily: {
         sans: ['var(--font-sans)'],
