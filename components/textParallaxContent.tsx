@@ -104,7 +104,7 @@ const OverlayCopy = ({
     });
   
     const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
-    const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.60, 0.80], [1, 0]);
   
     return (
       <motion.div
