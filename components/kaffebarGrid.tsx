@@ -9,27 +9,27 @@ export const KaffeBarGrid = () => {
     <section className="mx-auto max-w-7xl px-4 mt-[60px] sm:mt-[80px] text-black">
       <div className="grid grid-cols-12 gap-8 sm:gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle>VI LIGGER I SYDHAVN</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-            <div className="flex justify-center">
-              <span className="block text-center font-sans text-white">
-                Johan Kellers Vej 1, 2450 København
-              </span>
-            </div>
-          </div>
-        </BounceCard>
-        <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>ÅBNINGSTIDER</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
-                Vi har åbent mandag-fredag fra 8-16
+                Vi har åbent onsdag-søndag fra 8-15
               </span>
             </div>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
-          <CardTitle>DET SERVERER VI</CardTitle>
+          <CardTitle>ADRESSEN</CardTitle>
+          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+            <div className="flex justify-center">
+              <span className="block text-center font-sans text-white">
+                Johan Kellers Vej 1, 2450 København SV
+              </span>
+            </div>
+          </div>
+        </BounceCard>
+        <BounceCard className="col-span-12 md:col-span-4">
+          <CardTitle>MENUEN</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
@@ -39,14 +39,31 @@ export const KaffeBarGrid = () => {
           </div>
         </BounceCard>
       </div>
+      {/* Menu gallery */}
+      <div className="flex-col flex sm:flex-row items-center justify-center gap-8 sm:gap-4 px-5 sm:px-32 mt-24 sm:mt-[120px] mb-[100px] sm:mb-[200px]">
+        <Image
+        src='/menu1.webp'
+        width={300}
+        height={600}
+        alt="community"
+        className="rounded-2xl"
+        />
+        <Image
+        src='/menu2.webp'
+        width={300}
+        height={600}
+        alt="community"
+        className="rounded-2xl"
+        />
+      </div>
       <div className="flex relative flex-col items-center text-center gap-8 mt-[200px] sm:mt-[240px]">
-        <Image src='/line-drawing2.png' width={320} height={200} alt="people-line-drawing" className="absolute hidden sm:block -left-16 -top-28"/>
+        <Image src='/line-drawing2.png' width={460} height={200} alt="people-line-drawing" className="absolute hidden sm:block -left-16 -top-44"/>
         <Image src='/line-drawing2.png' width={150} height={120} alt="people-line-drawing" className="absolute sm:hidden left-8 -top-32"/>
 
         <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
-          KOM INDENFOR OG NYD <span className="text-secondary">LÆKKER KAFFE</span> 
+          KOM INDENFOR OG NYD <span className="text-secondary">EN VARM KAFFE</span> 
         </h2>
-        <p className="mb-20 text-black font-sans max-w-lg">Hos SOLA mærker du straks den gode stemning i vores italiensk-inspirede kaffebar</p>
+        <p className="mb-20 text-black font-sans font-semibold max-w-lg">Vi serverer bæredygtig kaffe og bagværk i vores italiensk-inspirerede kaffebar i Sydhavnen</p>
       </div>
     </section>
   );

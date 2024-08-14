@@ -11,7 +11,7 @@ export const BouncyCardsFeatures = () => {
         <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
           KONTORPLADSER I <span className="text-[#39592c]">HYGGELIGE OMGIVELSER</span> 
         </h2>
-        <p className="text-black font-sans max-w-lg">Vi tilbyder kontorpladser til mindre virksomheder og selvstændige i vores nyrenoverede kontorfællesskab i Sydhavn</p>
+        <p className="text-black font-sans font-semibold max-w-lg">Vi tilbyder kontorpladser i vores nye kontorfællesskab i Sydhavnen</p>
       </div>
       <div className="mt-[80px] mb-10 grid grid-cols-12 gap-8 sm:gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
@@ -21,7 +21,7 @@ export const BouncyCardsFeatures = () => {
               <ul className="font-sans text-white">
                 <li className="text-white font-normal text-center">50 kvm kontor med højt til loftet!</li>
                 <li className="text-white font-normal text-center">1000/1000 internet og print</li>
-                <li className="text-white font-normal text-center">Gratis kaffe og te</li>
+                <li className="text-white font-normal text-center">Gratis kaffe fra ØNSK</li>
                 <li className="text-white font-normal text-center">Hyggelig, grøn baggård</li>
               </ul>
             </div>
@@ -32,7 +32,7 @@ export const BouncyCardsFeatures = () => {
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
-                Kontoret er altid åbent - 24/7 365 dage om året. Det er sku da optur!
+                Kontoret er altid åbent - 24/7, 365
               </span>
             </div>
           </div>
@@ -43,9 +43,9 @@ export const BouncyCardsFeatures = () => {
               <div className="flex justify-center">
                 <ul className="font-sans text-white"> 
                     <li className="text-white font-normal text-center">Tæt på livlige og grønne Bavnehøj Allé</li>
-                    <li className="text-white font-normal text-center">Bus, s-tog og motorvejsarkørsel</li>
-                    <li className="text-white font-normal text-center">BaneGaarden og Carlsberg Byen</li>
-                    <li className="text-white font-normal text-center">Gode spisesteder</li>
+                    <li className="text-white font-normal text-center">Tæt på bus, s-tog og motorvejsarkørsel</li>
+                    <li className="text-white font-normal text-center">Tæt på BaneGaarden og Carlsberg Byen</li>
+                    <li className="text-white font-normal text-center">Tæt på gode spisesteder</li>
                 </ul>
               </div>
           </div>
@@ -58,7 +58,7 @@ export const BouncyCardsFeatures = () => {
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block text-center font-sans text-white">
-                  Du får god kaffe, bagværk og andre lækre sager, samt rabatordning
+                  Du kan få god kaffe, bagværk og andre lækre sager med rabatordning
               </span>
             </div>
           </div>

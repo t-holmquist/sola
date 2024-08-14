@@ -9,10 +9,10 @@ export default function Home() {
     <main className="bg-[#f0efd6]">
     <TextParallaxContent
     imgPath="/Hero-kaffebar.webp"
-    subheading="Kaffebar og Kontorfællesskab"
+    subheading="KAFFEBAR & KONTORFÆLLESSKAB"
     heading="SOLA"
     href="/"
-    buttonText="Gå til Kontorfælleskab"
+    buttonText="Gå til KONTORFÆLLESSKAB"
     buttonColor="bg-secondary"
     animationType="page-transition-kontor"
     heroImageAlign="bg-[22%]"

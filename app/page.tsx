@@ -11,10 +11,10 @@ export default function Home() {
     <main className="bg-[#f0efd6] flex flex-col gap-20">
       <TextParallaxContent
         imgPath="/Hero-kontor.webp"
-        subheading="Kaffebar og Kontorfællesskab"
+        subheading="KAFFEBAR & KONTORFÆLLESSKAB"
         heading="SOLA"
         href="/kaffebar"
-        buttonText="Gå til Kaffebar"
+        buttonText="Gå til KAFFEBAR"
         buttonColor="bg-primary"
         animationType="page-transition-kaffebar"
         heroImageAlign="bg-[62%]"
