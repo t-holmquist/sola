@@ -57,6 +57,7 @@ const StickyImage = ({ imgPath, heroImageAlign }: { imgPath: string, heroImageAl
     });
   
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
+    // Reminder: First 60% scroll y is 100% opacity, then from 60-80% opacity interpolates from 1 to 0%
     const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   
     return (
