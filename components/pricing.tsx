@@ -11,7 +11,7 @@ export const Pricing = () => {
             <h2 className="text-4xl font-gothic md:text-6xl text-white">PRIS PÅ KONTORPLADS</h2>
             <p className="text-white font-sans font-bold max-w-lg">Fra 2550 kr. ex moms</p>
             <p className="text-white font-sans max-w-md">Hvis du er i tvivl om det er noget for dig, er du altid velkommen til at kigge forbi!</p>
-            <Button text="Få en rundvisning" className="bg-white text-black font-sans" link="mailto:kontakt@solacph.dk"/>
+            <Button text="Få en rundvisning" className="bg-white text-black font-sans" link="#contact"/>
         </div>
     </div>
   )

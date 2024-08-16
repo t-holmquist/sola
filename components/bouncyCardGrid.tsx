@@ -43,7 +43,7 @@ export const BouncyCardsFeatures = () => {
               <div className="flex justify-center">
                 <ul className="font-sans text-white"> 
                     <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på livlige og grønne Bavnehøj Allé</li>
-                    <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på bus, s-tog og motorvejsarkørsel</li>
+                    <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på bus, s-tog og motorvejsafkørsel</li>
                     <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på BaneGaarden og Carlsberg Byen</li>
                     <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på gode spisesteder</li>
                 </ul>

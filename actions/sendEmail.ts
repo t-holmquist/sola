@@ -1,0 +1,38 @@
+'use server'
+
+import { Resend } from 'resend';
+
+// receive formdata and send email with Resend API
+
+
+type FormData = {
+    email: string,
+    message: string,
+}
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+
+export const sendEmail = async (formData: FormData) => {
+
+    const senderEmail = formData.email;
+    const message = formData.message;
+    
+    try {
+        await resend.emails.send({
+            from: 'Sola kontaktformular <onboarding@resend.dev>',
+            reply_to: senderEmail,
+            to: ['tjalfeholmquist@gmail.com'],
+            subject: 'Ny besked fra Sola',
+            text: message,
+        });
+
+        return true;
+        
+        
+    } catch (error) {
+        return false;
+    }
+        
+}
+ 
