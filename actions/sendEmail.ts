@@ -22,7 +22,7 @@ export const sendEmail = async (formData: FormData) => {
         await resend.emails.send({
             from: 'Sola kontaktformular <onboarding@resend.dev>',
             reply_to: senderEmail,
-            to: ['kontakt@solacph.dk'],
+            to: ['tjalfeholmquist@gmail.com'],
             subject: 'Ny besked fra Sola',
             text: message,
         });
