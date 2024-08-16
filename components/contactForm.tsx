@@ -53,7 +53,7 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form id="contact" onSubmit={form.handleSubmit(onSubmit)} className="mt-8 flex flex-col gap-6 w-[320px] md:w-[500px]">
+      <form id="contact" onSubmit={form.handleSubmit(onSubmit)} className="mt-4 flex flex-col gap-6 w-[320px] md:w-[500px]">
         <FormField
           control={form.control}
           name="email"
