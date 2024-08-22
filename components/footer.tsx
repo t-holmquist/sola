@@ -27,6 +27,10 @@ const Footer = ({
                         <Link href='mailto:kontakt@solacph.dk' className="text-white font-sans sm:text-[12px]">kontakt@solacph.dk</Link>
                     </div>
                     <div className="flex gap-2">
+                        <Image src="/icons/cvr.svg" width={15} height={15} alt="address"/>
+                        <p className="text-white font-sans sm:text-[12px]">CVR: 44664526</p>
+                    </div>
+                    <div className="flex gap-2">
                         <Link href="https://www.instagram.com/solacph">
                             <Image src="/icons/instagram.svg" width={32} height={32} alt="address" className="bg-secondary p-2 rounded-full"/>
                         </Link>
