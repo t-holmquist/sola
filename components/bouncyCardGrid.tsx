@@ -11,9 +11,26 @@ export const BouncyCardsFeatures = () => {
         <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
           KONTORPLADSER I <span className="text-[#39592c]">HYGGELIGE OMGIVELSER</span> 
         </h2>
-        <p className="text-black font-sans font-semibold max-w-lg">Vi tilbyder kontorpladser i vores nye kontorfællesskab i Sydhavnen</p>
+        <p className="text-black font-sans font-semibold max-w-xl">Vi tilbyder kontorpladser i vores nye kontorfællesskab i Sydhavnen</p>
       </div>
-      <div className="mt-[80px] mb-10 grid grid-cols-12 gap-8 sm:gap-4">
+      <motion.div 
+      className="mt-[80px] mb-10 grid grid-cols-12 gap-8 sm:gap-4"
+      initial={{
+        y:20,
+        opacity:0,
+      }}
+      whileInView={{
+        y:0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.4,
+        delay: 0.2
+      }}
+      viewport={{
+        once: true
+      }}
+      >
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>RUMMELIGT KONTOR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-24 sm:top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
@@ -50,9 +67,25 @@ export const BouncyCardsFeatures = () => {
               </div>
           </div>
         </BounceCard>
-      </div>
-      <div className="grid grid-cols-12 gap-8 sm:gap-4">
-        
+      </motion.div>
+      <motion.div 
+      className="grid grid-cols-12 gap-8 sm:gap-4"
+      initial={{
+        y:20,
+        opacity:0,
+      }}
+      whileInView={{
+        y:0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.4,
+        delay: 0.2
+      }}
+      viewport={{
+        once: true
+      }}
+      >
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>KAFFEBAR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
@@ -83,7 +116,7 @@ export const BouncyCardsFeatures = () => {
             </div>
           </div>
         </BounceCard>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -3,8 +3,10 @@ import Link from "next/link"
 
 const Footer = ({
     footerColor,
+    hasRapportLogo,
 }: {
     footerColor: string;
+    hasRapportLogo: boolean;
 }) => {
   return (
     <div className="mt-12 sm:mt-24">
@@ -30,9 +32,11 @@ const Footer = ({
                         <Image src="/icons/cvr.svg" width={15} height={15} alt="cvr"/>
                         <p className="text-white font-sans sm:text-[12px]">CVR: 44664526</p>
                     </div>
+                    {hasRapportLogo && (
                     <Link href="https://www.findsmiley.dk/1449105">
                         <Image src="/icons/rapport.gif" width={70} height={30} alt="fodevarestyrelsen"/>
                     </Link>
+                    )}
                     <div className="flex gap-2">
                         <Link href="https://www.instagram.com/solacph">
                             <Image src="/icons/instagram.svg" width={32} height={32} alt="address" className="bg-secondary p-2 rounded-full"/>

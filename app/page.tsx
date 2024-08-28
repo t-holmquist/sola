@@ -26,7 +26,7 @@ export default function Home() {
       <Pricing />
       <Gallery /> 
       <Contact />
-      <Footer footerColor="bg-primary" />
+      <Footer footerColor="bg-primary" hasRapportLogo={false}/>
       
     </main>
   );

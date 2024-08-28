@@ -7,7 +7,33 @@ import Image from "next/image";
 export const KaffeBarGrid = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 mt-[60px] sm:mt-[80px] text-black">
-      <div className="grid grid-cols-12 gap-8 sm:gap-4">
+      <div className="flex relative flex-col items-center text-center gap-8 mt-[150px] sm:mt-[240px]">
+        <Image src='/line-drawing2.png' width={460} height={200} alt="people-line-drawing" className="absolute z-10 hidden sm:block -left-16 -top-44"/>
+        <Image src='/line-drawing2.png' width={150} height={120} alt="people-line-drawing" className="absolute sm:hidden left-8 -top-32"/>
+
+        <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
+          KOM INDENFOR OG NYD <span className="text-secondary">EN VARM KAFFE</span> 
+        </h2>
+        <p className="mb-20 text-black font-sans font-semibold max-w-lg">Vi serverer bæredygtig kaffe og bagværk i vores italiensk-inspirerede kaffebar i Sydhavnen</p>
+      </div>
+      <motion.div 
+      className="grid grid-cols-12 gap-8 sm:gap-4 sm:mt-28"
+      initial={{
+        y:20,
+        opacity:0
+      }}
+      whileInView={{
+        y:0,
+        opacity: 1
+      }}
+      transition={{
+        duration: 0.4,
+        delay: 0.2
+      }}
+      viewport={{
+        once: true
+      }}
+      >
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>ÅBNINGSTIDER</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
@@ -38,9 +64,9 @@ export const KaffeBarGrid = () => {
             </div>
           </div>
         </BounceCard>
-      </div>
+      </motion.div>
       {/* Menu gallery */}
-      <div className="flex-col flex sm:flex-row items-center justify-center gap-8 sm:gap-10 px-5 sm:px-32 mt-24 sm:mt-[120px] mb-[100px] sm:mb-[200px]">
+      <div className="flex-col flex sm:flex-row items-center justify-center gap-8 sm:gap-10 px-5 sm:px-32 mt-24 sm:mt-[120px] mb-[100px] sm:mb-[140px]">
         <Image
         src='/menu-drikke.webp'
         width={450}
@@ -56,15 +82,7 @@ export const KaffeBarGrid = () => {
         className="rounded-2xl"
         />
       </div>
-      <div className="flex relative flex-col items-center text-center gap-8 mt-[200px] sm:mt-[240px]">
-        <Image src='/line-drawing2.png' width={460} height={200} alt="people-line-drawing" className="absolute hidden sm:block -left-16 -top-44"/>
-        <Image src='/line-drawing2.png' width={150} height={120} alt="people-line-drawing" className="absolute sm:hidden left-8 -top-32"/>
 
-        <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl">
-          KOM INDENFOR OG NYD <span className="text-secondary">EN VARM KAFFE</span> 
-        </h2>
-        <p className="mb-20 text-black font-sans font-semibold max-w-lg">Vi serverer bæredygtig kaffe og bagværk i vores italiensk-inspirerede kaffebar i Sydhavnen</p>
-      </div>
     </section>
   );
 };

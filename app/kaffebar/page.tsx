@@ -21,7 +21,7 @@ export default function Home() {
       </TextParallaxContent>
       <KaffeBarGrid />
       <KaffebarGallery /> 
-      <Footer footerColor="bg-secondary"/>
+      <Footer footerColor="bg-secondary" hasRapportLogo={true}/>
     </main>
   )
 }

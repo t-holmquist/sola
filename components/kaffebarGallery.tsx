@@ -1,8 +1,28 @@
+'use client'
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const KaffebarGallery = () => {
   return (
-    <div className="grid grid-cols-12 gap-8 sm:gap-12 px-5 sm:px-32 sm:mt-[140px] mb-[120px] sm:mb-[200px]">
+    <motion.div 
+    className="grid grid-cols-12 gap-8 sm:gap-12 px-5 sm:px-32 sm:mt-[140px] mb-[120px] sm:mb-[150px]"
+    initial={{
+      y:20,
+      opacity:0,
+    }}
+    whileInView={{
+      y:0,
+      opacity: 1,
+    }}
+    transition={{
+      duration: 0.4,
+      delay: 0.2
+    }}
+    viewport={{
+      once: true
+    }}
+    >
         <Image
         src='/kaffebar2.webp'
         width={660}
@@ -32,7 +52,7 @@ const KaffebarGallery = () => {
         className="rounded-2xl col-span-12 md:col-span-6"
         />
         
-    </div>
+    </motion.div>
   )
 }
 
