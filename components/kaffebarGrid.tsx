@@ -3,6 +3,7 @@
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { drikkeItems, spiseItems } from "@/data";
 
 export const KaffeBarGrid = () => {
   return (
@@ -19,11 +20,11 @@ export const KaffeBarGrid = () => {
       <motion.div 
       className="grid grid-cols-12 gap-8 sm:gap-4 sm:mt-28"
       initial={{
-        y:20,
+        x:-10,
         opacity:0
       }}
       whileInView={{
-        y:0,
+        x:0,
         opacity: 1
       }}
       transition={{
@@ -66,8 +67,58 @@ export const KaffeBarGrid = () => {
         </BounceCard>
       </motion.div>
       {/* Menu gallery */}
-      <div className="flex-col flex sm:flex-row items-center justify-center gap-8 sm:gap-10 px-5 sm:px-32 mt-24 sm:mt-[120px] mb-[100px] sm:mb-[140px]">
-        <Image
+      <motion.div 
+      className="flex-col flex relative sm:flex-row items-center justify-center gap-24 sm:gap-10 mt-52 sm:mt-72 mb-[100px] sm:mb-[140px]"
+      initial={{
+        x:10,
+        opacity:0
+      }}
+      whileInView={{
+        x:0,
+        opacity: 1
+      }}
+      transition={{
+        duration: 0.4,
+        delay: 0.2
+      }}
+      viewport={{
+        once: true
+      }}
+      >
+        <Image src='/line-drawing.png' width={500} height={300} alt="people-line-drawing" className="absolute hidden sm:block -top-56 -right-14"/>
+        <Image src='/line-drawing.png' width={270} height={150} alt="people-line-drawing" className="absolute sm:hidden -top-36 right-0"/>
+        <div className="flex flex-col md:w-2/6 w-full rounded-2xl bg-background2">
+            <div className="bg-accent text-center border-b border-background2 rounded-t-2xl font-gothic text-5xl p-4 text-white">
+              KOLDE OG VARME DRIKKE
+            </div>
+            <ul className="flex flex-col gap-3 items-center justify-center p-4">
+                {drikkeItems.map(({id, classNames, title, price}) => (
+                  <li key={id} className={classNames}>
+                    <p>{title}</p>
+                    <p>{price}</p>
+                  </li>
+                ))} 
+            </ul>
+        </div>
+        <div className="flex flex-col md:w-2/6 w-full rounded-2xl bg-background2">
+            <div className="bg-accent text-center border-b border-background2 rounded-t-2xl font-gothic text-5xl p-4 text-white">
+              MAD OG SNACKS
+            </div>
+            <ul className="flex flex-col gap-3 items-center justify-center p-4">
+                {spiseItems.map(({id, classNames, title, price}) => (
+                  <li key={id} className={classNames}>
+                    <p>{title}</p>
+                    <p>{price}</p>
+                  </li>
+                ))} 
+            </ul>
+        </div>
+        
+        
+        
+        
+        
+        {/* <Image
         src='/menu-drikke.webp'
         width={450}
         height={850}
@@ -80,8 +131,8 @@ export const KaffeBarGrid = () => {
         height={850}
         alt="menu"
         className="rounded-2xl"
-        />
-      </div>
+        /> */}
+      </motion.div>
 
     </section>
   );

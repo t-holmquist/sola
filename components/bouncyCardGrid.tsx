@@ -16,11 +16,11 @@ export const BouncyCardsFeatures = () => {
       <motion.div 
       className="mt-[80px] mb-10 grid grid-cols-12 gap-8 sm:gap-4"
       initial={{
-        y:20,
+        x:40,
         opacity:0,
       }}
       whileInView={{
-        y:0,
+        x:0,
         opacity: 1,
       }}
       transition={{
@@ -71,11 +71,11 @@ export const BouncyCardsFeatures = () => {
       <motion.div 
       className="grid grid-cols-12 gap-8 sm:gap-4"
       initial={{
-        y:20,
+        x:40,
         opacity:0,
       }}
       whileInView={{
-        y:0,
+        x:0,
         opacity: 1,
       }}
       transition={{

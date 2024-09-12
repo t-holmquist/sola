@@ -101,11 +101,11 @@ const OverlayCopy = ({
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
       target: targetRef,
-      offset: ["start end", "end start"],
+      offset: ["start start", "end start"],
     });
   
-    const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
-    const opacity = useTransform(scrollYProgress, [0.60, 0.80], [1, 0]);
+    const y = useTransform(scrollYProgress, [0, 1], [0, -250]);
+    const opacity = useTransform(scrollYProgress, [0.20, 0.80], [1, 0]);
   
     return (
       <motion.div
@@ -118,14 +118,28 @@ const OverlayCopy = ({
       >
         {/* div fixes height of font on large devices */}
         <div className="lg:h-64">
-          <h1 className="text-center text-white font-gothic text-9xl md:text-[300px]">
+          <motion.h1 
+          className="text-center text-white font-gothic text-9xl md:text-[300px]"
+          initial={{
+            x: -10,
+            opacity:0
+          }}
+          animate={{
+            x: 0,
+            opacity: 1
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.2
+          }}
+          >
             {heading}
-          </h1>
+          </motion.h1>
         </div>
         
         <TextGenerateEffect words={subheading} className="text-center text-white text-xl font-sans font-medium md:text-3xl"/>
         <div className="flex gap-10 mt-10">
-          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl px-4 py-2 font-medium text-white shadow-xl hover:scale-105 transition-all`}>{buttonText}</AnimationLink>
+          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl border px-4 py-2 font-medium text-white shadow-xl hover:scale-105 transition-all`}>{buttonText}</AnimationLink>
         </div>
       </motion.div>
     );

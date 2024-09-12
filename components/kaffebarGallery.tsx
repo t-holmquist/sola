@@ -8,11 +8,11 @@ const KaffebarGallery = () => {
     <motion.div 
     className="grid grid-cols-12 gap-8 sm:gap-12 px-5 sm:px-32 sm:mt-[140px] mb-[120px] sm:mb-[150px]"
     initial={{
-      y:20,
+      x:-20,
       opacity:0,
     }}
     whileInView={{
-      y:0,
+      x:0,
       opacity: 1,
     }}
     transition={{

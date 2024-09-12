@@ -12,7 +12,7 @@ export default function Home() {
     subheading="KAFFEBAR & KONTORFÆLLESSKAB"
     heading="SOLA"
     href="/"
-    buttonText="Gå til KONTORFÆLLESSKAB"
+    buttonText="GÅ TIL KONTORFÆLLESSKAB"
     buttonColor="bg-secondary"
     animationType="page-transition-kontor"
     heroImageAlign="bg-[22%]"
