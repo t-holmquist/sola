@@ -4,12 +4,7 @@ const DRIKKECLASSES = "flex w-full items-center font-sans justify-between border
 const SPISECLASSES = "flex w-full items-center font-sans justify-between border-b border-dotted";
 
 
-export const drikkeItems = [{
-        id: 1,
-        classNames: DRIKKECLASSES,
-        title: "FILTER",
-        price: "25",
-    },
+export const drikkeItems = [
     {
         id: 2,
         classNames: DRIKKECLASSES,
@@ -107,7 +102,7 @@ export const spiseItems = [{
     id: 5,
     classNames: SPISECLASSES,
     title: "ÆG",
-    price: "10",
+    price: "15",
 },
 {
     id: 6,
@@ -141,12 +136,6 @@ export const spiseItems = [{
 },
 {
     id: 11,
-    classNames: "flex w-full items-center font-sans justify-between border-b border-dotted text-transparent hidden sm:block",
-    title: "MAD",
-    price: "",
-},
-{
-    id: 12,
     classNames: "flex w-full items-center font-sans justify-between border-b border-dotted text-transparent hidden sm:block",
     title: "MAD",
     price: "",
