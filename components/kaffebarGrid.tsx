@@ -37,9 +37,9 @@ export const KaffeBarGrid = () => {
       >
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>ÅBNINGSTIDER</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+          <div className="absolute bottom-0 left-4 right-4 top-32 md:top-20 lg:top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white text-sm sm:text-base">
+              <span className="block font-sans text-white text-sm sm:text-base">
                 Vi har åbent fra 7:30-14:30 i hverdagene og 8:00-15:00 i weekenden.
               </span>
             </div>
@@ -47,9 +47,9 @@ export const KaffeBarGrid = () => {
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>ADRESSEN</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+          <div className="absolute bottom-0 left-4 right-4 top-32 md:top-20 lg:top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white text-sm sm:text-base">
+              <span className="block font-sans text-white text-sm sm:text-base">
                 Johan Kellers Vej 1, 2450 København SV
               </span>
             </div>
@@ -57,9 +57,9 @@ export const KaffeBarGrid = () => {
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>MENUEN</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+          <div className="absolute bottom-0 left-4 right-4 top-32 md:top-20 lg:top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white text-sm sm:text-base">
+              <span className="block font-sans text-white text-sm sm:text-base">
                 God kaffe, bagværk og andre lækre sager i italiensk-inspirerede omgivelser
               </span>
             </div>
@@ -87,7 +87,7 @@ export const KaffeBarGrid = () => {
       >
         <Image src='/line-drawing.png' width={500} height={300} alt="people-line-drawing" className="absolute hidden sm:block -top-56 -right-14"/>
         <Image src='/line-drawing.png' width={270} height={150} alt="people-line-drawing" className="absolute sm:hidden -top-36 right-0"/>
-        <div className="flex flex-col md:w-2/6 w-full rounded-2xl bg-background2">
+        <div className="flex flex-col lg:w-2/6 w-full rounded-2xl bg-background2">
             <div className="bg-accent text-center border-b border-background2 rounded-t-2xl font-gothic text-5xl p-4 text-white">
               KOLDE OG VARME DRIKKE
             </div>
@@ -100,7 +100,7 @@ export const KaffeBarGrid = () => {
                 ))} 
             </ul>
         </div>
-        <div className="flex flex-col md:w-2/6 w-full rounded-2xl bg-background2">
+        <div className="flex flex-col lg:w-2/6 w-full rounded-2xl bg-background2">
             <div className="bg-accent text-center border-b border-background2 rounded-t-2xl font-gothic text-5xl p-4 text-white">
               MAD OG SNACKS
             </div>
@@ -113,25 +113,6 @@ export const KaffeBarGrid = () => {
                 ))} 
             </ul>
         </div>
-        
-        
-        
-        
-        
-        {/* <Image
-        src='/menu-drikke.webp'
-        width={450}
-        height={850}
-        alt="menu"
-        className="rounded-2xl"
-        />
-        <Image
-        src='/menu-spise.webp'
-        width={450}
-        height={850}
-        alt="menu"
-        className="rounded-2xl"
-        /> */}
       </motion.div>
 
     </section>

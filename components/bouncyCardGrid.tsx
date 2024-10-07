@@ -5,6 +5,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export const BouncyCardsFeatures = () => {
+
+  const cardListItemClassNames = "text-white font-sans text-sm md:text-xs lg:text-base";
+
+
+
   return (
     <section className="mx-auto max-w-7xl px-4 text-black">
       <div className="flex flex-col items-center text-center gap-10">
@@ -33,22 +38,22 @@ export const BouncyCardsFeatures = () => {
       >
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>RUMMELIGT KONTOR</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-24 sm:top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+          <div className="absolute bottom-0 left-4 right-4 top-24 md:top-28 lg:top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <ul className="font-sans text-white">
-                <li className="text-white font-normal text-center text-sm sm:text-base">50 kvm kontor med højt til loftet!</li>
-                <li className="text-white font-normal text-center text-sm sm:text-base">1000/1000 internet og print</li>
-                <li className="text-white font-normal text-center text-sm sm:text-base">Gratis kaffe fra ØNSK</li>
-                <li className="text-white font-normal text-center text-sm sm:text-base">Hyggelig, grøn baggård</li>
+                <li className={cardListItemClassNames}>50 kvm kontor med højt til loftet!</li>
+                <li className={cardListItemClassNames}>1000/1000 internet og print</li>
+                <li className={cardListItemClassNames}>Gratis kaffe fra ØNSK</li>
+                <li className={cardListItemClassNames}>Hyggelig, grøn baggård</li>
               </ul>
             </div>
           </div>
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>ÅBENT 24/7</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+          <div className="absolute bottom-0 left-4 right-4 top-32 md:top-36 lg:top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white text-sm sm:text-base">
+              <span className={cardListItemClassNames}>
                 Kontoret er altid åbent - 24/7, 365
               </span>
             </div>
@@ -56,13 +61,13 @@ export const BouncyCardsFeatures = () => {
         </BounceCard>
         <BounceCard className="col-span-12 md:col-span-4">
           <CardTitle>GOD BELIGGENHED</CardTitle>
-          <div className="absolute bottom-0 left-4 right-4 top-24 sm:top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+          <div className="absolute bottom-0 left-4 right-4 top-24 md:top-16 lg:top-20 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
               <div className="flex justify-center">
                 <ul className="font-sans text-white"> 
-                    <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på livlige og grønne Bavnehøj Allé</li>
-                    <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på bus, s-tog og motorvejsafkørsel</li>
-                    <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på BaneGaarden og Carlsberg Byen</li>
-                    <li className="text-white font-normal text-center text-sm sm:text-base">Tæt på gode spisesteder</li>
+                    <li className={cardListItemClassNames}>Tæt på livlige og grønne Bavnehøj Allé</li>
+                    <li className={cardListItemClassNames}>Tæt på bus, s-tog og motorvejsafkørsel</li>
+                    <li className={cardListItemClassNames}>Tæt på BaneGaarden og Carlsberg Byen</li>
+                    <li className={cardListItemClassNames}>Tæt på gode spisesteder</li>
                 </ul>
               </div>
           </div>
@@ -90,7 +95,7 @@ export const BouncyCardsFeatures = () => {
           <CardTitle>KAFFEBAR</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white text-sm sm:text-base">
+              <span className={cardListItemClassNames}>
                   Du kan få god kaffe, bagværk og andre lækre sager med rabatordning
               </span>
             </div>
@@ -100,7 +105,7 @@ export const BouncyCardsFeatures = () => {
           <CardTitle>MØDELOKALE</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white text-sm sm:text-base">
+              <span className={cardListItemClassNames}>
                 Rummeligt mødelokale med fladskærm og whiteboard til præsentationer
               </span>
             </div>
@@ -110,7 +115,7 @@ export const BouncyCardsFeatures = () => {
           <CardTitle>SPÆNDENDE COMMUNITY</CardTitle>
           <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-[#39592c] p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
-              <span className="block text-center font-sans text-white text-sm sm:text-base">
+              <span className={cardListItemClassNames}>
                 Få og giv sparring med andre virksomheder og selvstændige
               </span>
             </div>
@@ -144,7 +149,7 @@ const CardTitle = ({ children, logoPath }: { children: ReactNode, logoPath?: str
         {logoPath && (
           <Image src={logoPath} width={50} height={50} alt="feature-logo"/>
         )}
-        <h3 className="text-5xl font-gothic">{children}</h3>
+        <h3 className="text-5xl md:text-3xl lg:text-5xl font-gothic">{children}</h3>
     </div>
   );
 };

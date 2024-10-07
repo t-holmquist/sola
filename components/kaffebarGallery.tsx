@@ -6,7 +6,7 @@ import Image from "next/image";
 const KaffebarGallery = () => {
   return (
     <motion.div 
-    className="grid grid-cols-12 gap-8 sm:gap-12 px-5 sm:px-32 sm:mt-[140px] mb-[120px] sm:mb-[150px]"
+    className="grid grid-cols-12 gap-8 lg:gap-12 px-5 lg:px-32 sm:mt-[140px] mb-[120px] sm:mb-[150px]"
     initial={{
       x:-20,
       opacity:0,
