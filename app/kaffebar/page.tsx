@@ -2,7 +2,12 @@ import Footer from "@/components/footer";
 import KaffebarGallery from "@/components/kaffebarGallery";
 import { KaffeBarGrid } from "@/components/kaffebarGrid";
 import { TextParallaxContent } from "@/components/textParallaxContent";
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: "SOLA kaffebar",
+  description: "Kaffebaren serverer økologisk bagværk og kaffe alle dage i ugen. Der er brætspil, pladser udendørs og kolde drikke i køleskabet.",
+};
 
 export default function Home() {
   return (

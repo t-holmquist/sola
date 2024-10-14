@@ -15,8 +15,8 @@ const alternateGothic = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "SOLA",
-  description: "Kaffebar og kontorfællesskab",
+  title: "SOLA kontorfællesskab",
+  description: "Kontorfællesskabet har 10 pladser, køkken, mødelokale og egen kaffebar. Kontoret er udstyret med 1000/1000 internet, gratis kaffe fra ØNSK og en god beliggenhed nær spisesteder og grønne områder.",
 };
 
 export default function RootLayout({

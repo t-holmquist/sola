@@ -1,6 +1,5 @@
 import { BouncyCardsFeatures } from "@/components/bouncyCardGrid";
 import Contact from "@/components/contact";
-import ContactForm from "@/components/contactForm";
 import Footer from "@/components/footer";
 import Gallery from "@/components/gallery";
 import Pricing from "@/components/pricing";
