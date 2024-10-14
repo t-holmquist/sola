@@ -24,7 +24,7 @@ const Gallery = () => {
     }}
     >
         <Image
-        src='/Hero-kontor.webp'
+        src='/kontor2.webp'
         width={1220}
         height={800}
         alt="community"
