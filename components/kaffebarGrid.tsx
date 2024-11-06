@@ -40,7 +40,7 @@ export const KaffeBarGrid = () => {
           <div className="absolute bottom-0 left-4 right-4 top-32 md:top-20 lg:top-32 translate-y-8 rounded-t-2xl bg-secondary p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
             <div className="flex justify-center">
               <span className="block font-sans text-white text-sm sm:text-base">
-                Vi har åbent fra 7:30-14:30 i hverdagene og 8:00-15:00 i weekenden.
+                Vi har åbent fra 8-12 i hverdagene og i weekenden.
               </span>
             </div>
           </div>
