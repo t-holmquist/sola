@@ -49,9 +49,9 @@ export const drikkeItems = [
     },
     {
         id: 9,
-        classNames: DRIKKECLASSES,
-        title: "GLØGG",
-        price: "60",
+        classNames: "flex w-full items-center font-sans justify-between border-b border-dotted text-transparent hidden sm:block",
+        title: "VARME DRIKKE",
+        price: "",
     },
     {
         id: 10,
