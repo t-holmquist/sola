@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode, useRef } from "react";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import AnimationLink from "@/utils/animationLink";
+import { Button } from "./ui/button";
 
 const IMG_PADDING = 12;
 
@@ -14,6 +15,7 @@ export const TextParallaxContent = ({
     buttonText,
     buttonColor,
     animationType,
+    hasSecondButton,
     href,
     children,
     heroImageAlign,
@@ -22,6 +24,7 @@ export const TextParallaxContent = ({
     subheading: string;
     heading: string;
     animationType: string;
+    hasSecondButton: boolean;
     buttonColor: string;
     buttonText: string;
     href: string;
@@ -39,7 +42,7 @@ export const TextParallaxContent = ({
       >
         <div className="relative h-[100vh]">
           <StickyImage imgPath={imgPath} heroImageAlign={heroImageAlign} />
-          <OverlayCopy heading={heading} subheading={subheading} href={href} animationType={animationType} buttonText={buttonText} buttonColor={buttonColor}/>
+          <OverlayCopy heading={heading} subheading={subheading} href={href} animationType={animationType} buttonText={buttonText} buttonColor={buttonColor} hasSecondButton={hasSecondButton}/>
         </div>
         {children}
       </div>
@@ -88,6 +91,7 @@ const OverlayCopy = ({
     heading,
     buttonText,
     buttonColor,
+    hasSecondButton,
     animationType,
     href,
   }: {
@@ -95,6 +99,7 @@ const OverlayCopy = ({
     heading: string;
     buttonText: string;
     buttonColor: string;
+    hasSecondButton: boolean;
     animationType: string;
     href: string;
   }) => {
@@ -138,8 +143,15 @@ const OverlayCopy = ({
         </div>
         
         <TextGenerateEffect words={subheading} className="text-center text-white text-xl font-sans font-medium md:text-3xl"/>
-        <div className="flex gap-10 mt-10">
-          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl border px-4 py-2 font-medium text-white shadow-xl hover:scale-105 transition-all`}>{buttonText}</AnimationLink>
+        <div className="flex gap-6 mt-10">
+          {hasSecondButton && (
+            <Button
+            text="Kontorfællesskab"
+            link="#community"
+            className="bg-primary"
+            />
+          )}
+          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl border px-4 py-2 font-normal text-white shadow-xl hover:scale-105 transition-all`}>{buttonText}</AnimationLink>
         </div>
       </motion.div>
     );

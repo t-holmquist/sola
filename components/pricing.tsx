@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Pricing = () => {
   return (
     <motion.div 
-    className="flex justify-center mt-44 sm:mt-28 mx-5"
+    className="flex justify-center"
     initial={{
       x:-40,
       opacity:0

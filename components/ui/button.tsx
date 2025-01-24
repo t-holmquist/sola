@@ -9,7 +9,7 @@ export const Button = ( { text, className, link } : { text: string, className?: 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className={`whitespace-nowrap rounded-xl px-4 py-2 font-medium shadow-xl transition-colors ${className}`}
+            className={`whitespace-nowrap rounded-xl px-4 py-2 font-normal font-sans shadow-xl border transition-colors ${className}`}
           >
             {text}
           </motion.button>

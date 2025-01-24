@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${openSans.variable} ${alternateGothic.variable} bg-[#f0efd6]`}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${openSans.variable} ${alternateGothic.variable} bg-background`}>{children}</body>
     </html>
   );
 }

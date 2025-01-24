@@ -23,6 +23,9 @@ const config: Config = {
         accent2: '#006fc0',
         background: '#f0efd6',
         background2: '#f4f4ef',
+        backgroundSandDark: '#EBEAC7',
+        backgroundGreenLight: '#D3E6CC',
+
       },
       fontFamily: {
         sans: ['var(--font-sans)'],
