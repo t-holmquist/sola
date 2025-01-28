@@ -1,3 +1,4 @@
+import AboutSola from "@/components/aboutSola";
 import Community from "@/components/community";
 import Contact from "@/components/contact";
 import Floorplan from "@/components/floorplan";
@@ -30,7 +31,8 @@ export default function Home() {
           <Floorplan />
           <OfficeGallery />
         </div>
-        <div className="flex flex-col px-5 lg:px-20 gap-96">
+        <div className="flex flex-col px-8 md:px-14 lg:px-20 gap-44">
+          <AboutSola />
           <Contact />
         </div>
       </main>

@@ -4,11 +4,11 @@ import { Button } from "./ui/button";
 
 export const Community = () => {
     return (
-        <section id="community" className="grid grid-col-1 lg:grid-cols-12 gap-8 justify-between">
-            <div className="col-span-6 justify-end">
+        <section id="community" className="grid grid-col-1 lg:grid-cols-12 gap-8">
+            <div className="col-span-6">
                 <div className="flex flex-col gap-6">
                     <h2 className="text-5xl md:text-6xl font-bold font-gothic">Bliv en del af et <span className="text-accent">voksende community</span></h2>
-                    <p className="font-sans max-w-lg">SOLA er en kaffebar og et kontorfællesskab slået sammen. Idéen stammer fra det amerikanske “coffice”, hvor kaffen er et så vigtigt omdrejningspunkt, at man har professionelle baristaer knyttet til kontoret. </p>
+                    <p className="font-sans max-w-lg font-medium">SOLA er en kaffebar og et kontorfællesskab slået sammen. Idéen stammer fra det amerikanske “coffice”, hvor kaffen er et så vigtigt omdrejningspunkt, at man har professionelle baristaer knyttet til kontoret. </p>
                     <Button 
                     text="Få en rundvisning"
                     link="#contact"
@@ -21,7 +21,7 @@ export const Community = () => {
                 </div>
             </div>
             <div className="col-span-6">
-                <Image src={"/kontor2.webp"} width={950} height={1400} alt="office" className="rounded-2xl min-h-full object-cover border border-accent"/>
+                <Image src={"/kontor2.webp"} width={950} height={1400} alt="office" className="rounded-2xl min-h-full object-cover w-full border border-accent"/>
             </div>
         </section>
     );
