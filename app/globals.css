@@ -22,6 +22,12 @@ body {
   transition-duration: 300ms;
 }
 
+/* Fades the green bg section */
+
+.greenBackgroundFade {
+  background: linear-gradient(to bottom, #D3E6CC, #f0efd6);
+}
+
 
 
 .page-transition-kaffebar {
