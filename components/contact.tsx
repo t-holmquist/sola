@@ -6,8 +6,8 @@ export const Contact = () => {
   return (
     <div className="flex relative flex-col items-center gap-8">
       <div className="flex flex-col gap-8">
-        <Image src='/line-drawing.png' width={450} height={250} alt="people-line-drawing" className="absolute hidden lg:block -top-20 left-10 z-10"/>
-        <Image src='/line-drawing.png' width={250} height={250} alt="people-line-drawing" className="absolute -top-[150px] lg:hidden z-10"/>
+        <Image src='/line-drawing.png' width={450} height={250} alt="people-line-drawing" className="absolute hidden lg:block -top-20 left-10 z-10 animate-illustrationUP"/>
+        <Image src='/line-drawing.png' width={250} height={250} alt="people-line-drawing" className="absolute -top-[150px] lg:hidden z-10 animate-illustrationUP"/>
         <div className="flex flex-col gap-3 p-4 border-accent border bg-backgroundSandDark rounded-2xl relative z-20">
           <h2 className="text-5xl md:text-6xl font-gothic text-black">Pris på kontorplads</h2>
           <p className="font-sans font-bold text-accent">2200 kr. ex moms</p>

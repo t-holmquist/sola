@@ -31,6 +31,19 @@ const config: Config = {
         sans: ['var(--font-sans)'],
         gothic: ['var(--font-gothic)'],
       },
+      keyframes: {
+        illustrationUP: {
+          "0%": {
+            transform: "translateY(5%)",
+          },
+          "100%": {
+            transform: "translateY(0%)",
+          },
+        },
+      },
+      animation: {
+        illustrationUP: "illustrationUP 4s ease-in-out infinite alternate-reverse",
+      },
     },
   },
   plugins: [],

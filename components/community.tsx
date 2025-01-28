@@ -15,7 +15,7 @@ export const Community = () => {
                     className="bg-primary text-white"
                     />
                     <div className="relative mt-10">
-                        <Image src={"/illustrations/coffee.webp"} width={200} height={150} alt="office" className="absolute -top-36 right-0"/>
+                        <Image src={"/illustrations/coffee.webp"} width={200} height={150} alt="office" className="absolute -top-36 right-0 animate-illustrationUP"/>
                         <Image src={"/kontor.webp"} width={900} height={600} alt="office" className="rounded-2xl min-w-full border border-accent z-40 relative"/>
                     </div>
                 </div>
