@@ -151,7 +151,7 @@ const OverlayCopy = ({
             className="bg-primary"
             />
           )}
-          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl border px-4 py-2 font-normal text-white shadow-xl hover:scale-105 transition-all`}>{buttonText}</AnimationLink>
+          <AnimationLink animationType={animationType} href={href} className={`font-sans ${buttonColor} whitespace-nowrap rounded-xl px-4 py-2 font-normal text-white shadow-xl hover:scale-105 transition-all`}>{buttonText}</AnimationLink>
         </div>
       </motion.div>
     );

@@ -6,7 +6,7 @@ export const Floorplan = () => {
     return (
         <section className="grid grid-cols-1 xl:grid-cols-12 lg:items-end gap-14 md:gap-24">
             <div className="flex flex-col lg:col-span-6 gap-10">
-                <Image src={"/illustrations/solaIllustration.webp"} width={550} height={550} alt="SOLA" className="aspect-video object-cover"/>
+                <Image src={"/illustrations/solakontor.webp"} width={550} height={550} alt="SOLA" className="aspect-video object-cover"/>
                 <h2 className="font-gothic font-bold text-5xl md:text-6xl">Sådan kan dit <span className="text-accent">kommende kontor se ud</span></h2>
                 <p className="font-sans">Kontorfælleskabet er fordelt på to planer. Vi har 10 pladser i alt og har alle faciliteter, der forventes af et anstændigt kontor.</p>
                 <div className="flex gap-2">

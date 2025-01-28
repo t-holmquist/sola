@@ -3,7 +3,6 @@ import Contact from "@/components/contact";
 import Floorplan from "@/components/floorplan";
 import Footer from "@/components/footer";
 import OfficeGallery from "@/components/officeGallery";
-import Pricing from "@/components/pricing";
 import { TextParallaxContent } from "@/components/textParallaxContent";
 
 
