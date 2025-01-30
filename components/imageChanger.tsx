@@ -33,6 +33,7 @@ export const ImageChanger = () => {
                     width={600}
                     height={600}
                     className="rounded-2xl"
+                    priority
                 />
             </motion.div>
         </section>
