@@ -146,7 +146,7 @@ const OverlayCopy = ({
         <div className="flex gap-6 mt-10">
           {hasSecondButton && (
             <Button
-            text="Kontorfællesskab"
+            text="Se kontor"
             link="#community"
             className="bg-primary"
             />

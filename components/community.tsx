@@ -8,7 +8,8 @@ export const Community = () => {
             <div className="col-span-6">
                 <div className="flex flex-col gap-6">
                     <h2 className="text-5xl md:text-6xl font-bold font-gothic">Bliv en del af et <span className="text-accent">voksende community</span></h2>
-                    <p className="font-sans max-w-lg font-medium">SOLA er en kaffebar og et kontorfællesskab slået sammen. Idéen stammer fra det amerikanske “coffice”, hvor kaffen er et så vigtigt omdrejningspunkt, at man har professionelle baristaer knyttet til kontoret. </p>
+                    <p className="font-sans max-w-lg font-medium">SOLA er en kaffebar og kontorfælllesskab slået sammen. Hos SOLA sidder i øjeblikket folk indenfor reklamebranchen, journalistik, regnskab og tech. 
+                    Der er ikke branchespecificitet i SOLA, hvorfor der er plads til alt fra kreative erhverv til bogholdere. Fællesskabet er omdrejningspunktet både i kontoret og i kaffebaren.</p>
                     <Button 
                     text="Få en rundvisning"
                     link="#contact"
