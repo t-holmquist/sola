@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export const Community = () => {
     return (
-        <section id="community" className="grid grid-col-1 lg:grid-cols-12 gap-8">
+        <section id="community" className="grid grid-col-1 lg:grid-cols-12 gap-8 items-end">
             <div className="col-span-6">
                 <div className="flex flex-col gap-6">
                     <h2 className="text-5xl md:text-6xl font-bold font-gothic">Bliv en del af et <span className="text-accent">voksende community</span></h2>
@@ -22,7 +22,7 @@ export const Community = () => {
                 </div>
             </div>
             <div className="col-span-6">
-                <Image src={"/kontor2.webp"} width={950} height={1400} alt="office" className="rounded-2xl min-h-full object-cover w-full border border-accent"/>
+                <Image src={"/kontor2_4x5.webp"} width={1080} height={1350} alt="office" className="rounded-2xl w-full border border-accent"/>
             </div>
         </section>
     );

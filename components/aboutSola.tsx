@@ -13,7 +13,7 @@ export const AboutSola = () => {
                     <div className="relative mt-16 sm:mt-10">
                         <Image src={"/illustrations/krydsogtvaers.webp"} width={160} height={150} alt="office" className="absolute -top-28 -right-4 sm:hidden"/>
                         <Image src={"/illustrations/krydsogtvaers.webp"} width={220} height={150} alt="office" className="absolute -top-36 -right-8 sm:block hidden"/>
-                        <Image src={"/emil-jannik.webp"} width={900} height={600} alt="office" className="rounded-2xl min-w-full border border-accent z-40 relative"/>
+                        <Image src={"/emil_jannik.webp"} width={960} height={540} alt="office" className="rounded-2xl min-w-full border border-accent z-40 relative"/>
                         <div className="absolute -top-4 sm:-top-4 left-6 z-50 p-1 sm:p-2 border border-accent bg-backgroundSandDark rounded-2xl">
                             <p className="font-sans font-bold sm:text-normal text-xs">Emil og Jannik står bag SOLA</p>
                         </div>
@@ -21,7 +21,7 @@ export const AboutSola = () => {
                 </div>
             </div>
             <div className="col-span-6">
-                <Image src={"/brunbodega.webp"} width={500} height={500} alt="office" className="rounded-2xl border border-accent aspect-[4/5] object-cover object-bottom w-full"/>
+                <Image src={"/brunbodega.webp"} width={900} height={1440} alt="office" className="rounded-2xl border border-accent aspect-[4/5] object-cover object-bottom w-full"/>
             </div>
         </section>
     );

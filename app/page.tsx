@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <main className="space-y-12 md:space-y-24">
         <TextParallaxContent
-          imgPath="/hero-kontor2.webp"
+          imgPath="/hero_kontor.webp"
           subheading="KAFFEBAR & KONTORFÆLLESSKAB"
           heading="SOLA"
           href="/kaffebar"
