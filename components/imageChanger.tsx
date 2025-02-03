@@ -3,14 +3,20 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export const ImageChanger = () => {
 
     const [currentImage, setCurrentImage] = useState("/oevreplan.webp");
 
-    
+    useEffect(() => {
+        const preloadImages = ["/oevreplan.webp", "/nedreplan.webp"];
+        preloadImages.forEach((src) => {
+            const img = new window.Image();
+            img.src = src;
+        });
+    }, []);
 
     return (
         <section 
@@ -33,7 +39,6 @@ export const ImageChanger = () => {
                     width={600}
                     height={600}
                     className="rounded-2xl"
-                    priority
                 />
             </motion.div>
         </section>
