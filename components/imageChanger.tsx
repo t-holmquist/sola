@@ -3,20 +3,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 export const ImageChanger = () => {
 
     const [currentImage, setCurrentImage] = useState("/oevreplan.webp");
-
-    useEffect(() => {
-        const preloadImages = ["/oevreplan.webp", "/nedreplan.webp"];
-        preloadImages.forEach((src) => {
-            const img = new window.Image();
-            img.src = src;
-        });
-    }, []);
 
     return (
         <section 
