@@ -34,7 +34,7 @@ const config: Config = {
       keyframes: {
         illustrationUP: {
           "0%": {
-            transform: "translateY(5%)",
+            transform: "translateY(6%)",
           },
           "100%": {
             transform: "translateY(0%)",
@@ -42,7 +42,7 @@ const config: Config = {
         },
       },
       animation: {
-        illustrationUP: "illustrationUP 4s ease-in-out infinite alternate-reverse",
+        illustrationUP: "illustrationUP 3s ease-in-out infinite alternate-reverse",
       },
     },
   },
