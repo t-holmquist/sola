@@ -1,23 +1,46 @@
 'use client'
 
-import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { drikkeItems, spiseItems } from "@/data";
 import Infocard from "./infocard";
 
 export const KaffeBarGrid = () => {
+
+  const list = {
+    hidden: {},
+    visible: {}
+  }
+
+  const item = {
+      hidden: { opacity: 0, y: 20},
+      visible: { opacity: 1, y: 0}
+  }
+
   return (
     <section className="mx-auto max-w-7xl px-4 text-black">
-      <div className="flex relative flex-col gap-8 mt-24">
-        <Image src='/line-drawing2.png' width={460} height={200} alt="people-line-drawing" className="absolute hidden sm:block right-16 -top-28 z-10"/>
-        <Image src='/line-drawing2.png' width={150} height={120} alt="people-line-drawing" className="absolute sm:hidden left-8 -top-32"/>
+      <motion.div className="flex relative flex-col gap-8 mt-24"
+      variants={list}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{amount: 0.8, once: true}}
+      transition={{
+          staggerChildren: 0.3,
+      }}
+      >
+        <Image src='/line-drawing2.png' width={460} height={200} alt="people-line-drawing" className="absolute hidden lg:block right-16 -top-28 z-10"/>
+        <Image src='/line-drawing2.png' width={260} height={200} alt="people-line-drawing" className="absolute hidden sm:block lg:hidden right-0 -top-28 z-10"/>
+        <Image src='/line-drawing2.png' width={150} height={120} alt="people-line-drawing" className="absolute sm:hidden left-8 -top-32 z-10"/>
 
-        <h2 className="text-5xl font-gothic md:text-7xl max-w-4xl relative">
+        <motion.h2 className="text-5xl font-gothic md:text-7xl max-w-4xl relative z-20"
+        variants={item}
+        >
           Kom indenfor og nyd <span className="text-secondary">en varm kop kaffe</span> 
-        </h2>
-        <p className="text-black font-sans font-medium max-w-xl">Vi serverer bæredygtig kaffe og bagværk i vores italiensk-inspirerede kaffebar i Sydhavnen. Vi stræber altid efter at skabe en hyggelig og hjemlig stemning, så vores gæster føler sig velkomne og godt tilpas. Inde bagved kaffebaren har vi et kontorfællesskab.</p>
-      </div>
+        </motion.h2>
+        <motion.p className="text-black font-sans font-medium max-w-xl relative z-20"
+        variants={item}
+        >Vi serverer bæredygtig kaffe og bagværk i vores italiensk-inspirerede kaffebar i Sydhavnen. Vi stræber altid efter at skabe en hyggelig og hjemlig stemning, så vores gæster føler sig velkomne og godt tilpas. Inde bagved kaffebaren har vi et kontorfællesskab.</motion.p>
+      </motion.div>
       <motion.div 
       className="grid grid-col-1 md:grid-cols-12 gap-8 sm:gap-4 mt-14"
       initial={{
