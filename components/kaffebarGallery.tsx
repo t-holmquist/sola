@@ -28,28 +28,28 @@ const KaffebarGallery = () => {
         width={660}
         height={240}
         alt="community"
-        className="rounded-2xl col-span-12 md:col-span-6"
+        className="rounded-2xl col-span-12 md:col-span-6 border border-accent"
         />
         <Image
         src='/kaffebar1.webp'
         width={660}
         height={240}
         alt="community"
-        className="rounded-2xl col-span-12 md:col-span-6"
+        className="rounded-2xl col-span-12 md:col-span-6 border border-accent"
         />
         <Image
         src='/kaffebar4.webp'
         width={660}
         height={240}
         alt="community"
-        className="rounded-2xl col-span-12 md:col-span-6"
+        className="rounded-2xl col-span-12 md:col-span-6 border border-accent"
         />
         <Image
         src='/kaffebar3.webp'
         width={660}
         height={240}
         alt="community"
-        className="rounded-2xl col-span-12 md:col-span-6"
+        className="rounded-2xl col-span-12 md:col-span-6 border border-accent"
         />
         
     </motion.div>

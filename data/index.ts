@@ -1,7 +1,7 @@
 
-const DRIKKECLASSES = "flex w-full items-center font-sans justify-between border-b border-dotted";
+const DRIKKECLASSES = "flex w-full items-center font-sans justify-between border-b border-dotted border-slate-400";
 
-const SPISECLASSES = "flex w-full items-center font-sans justify-between border-b border-dotted";
+const SPISECLASSES = "flex w-full items-center font-sans justify-between border-b border-dotted border-slate-400";
 
 
 export const drikkeItems = [
