@@ -24,10 +24,10 @@ export default function Home() {
     heroImageAlign="bg-[22%]"
       >
         <></>
-      </TextParallaxContent>
-      <KaffeBarGrid />
-      <KaffebarGallery /> 
-      <Footer footerColor="bg-secondary" hasRapportLogo={true}/>
+    </TextParallaxContent>
+    <KaffeBarGrid />
+    <KaffebarGallery /> 
+    <Footer footerColor="bg-secondary" hasRapportLogo={true}/>
     </main>
   )
 }
