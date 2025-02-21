@@ -142,7 +142,7 @@ const OverlayCopy = ({
           </motion.h1>
         </div>
         
-        <TextGenerateEffect words={subheading} className="text-center text-white font-sans font-medium"/>
+        <TextGenerateEffect words={subheading} className="text-center"/>
         <div className="flex gap-6 mt-10">
           {hasSecondButton && (
             <Button

@@ -47,11 +47,11 @@ export const Floorplan = () => {
                         <p className="font-sans font-medium max-w-3xl"><span className="font-bold">Rummeligt kontor med mødelokale. </span>Kontoret er ca. 50 kvm, udrustet med hurtigt internet (1000/1000) og har mødelokale med fladskærm og whiteboard.</p>
                     </div>
                 </motion.div>
-                <motion.div className="flex gap-2 sm:gap-1"
+                <motion.div className="flex gap-2"
                 variants={item}
                 >
                     <div className="mt-1.5">
-                        <Image src={"/icons/clock-solid.svg"} width={30} height={30} alt="SOLA"/>
+                        <Image src={"/icons/clock-solid.svg"} width={35} height={30} alt="SOLA"/>
                     </div>
                     <div>
                         <p className="font-sans font-medium max-w-3xl"><span className="font-bold">God beliggenhed og åbent 24/7. </span>Vi ligger blot et stenkast fra motorvejsafkørsel, s-tog, bus og hyggelige grønne områder.</p>
