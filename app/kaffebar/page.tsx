@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-[#f0efd6]">
+    <main className="bg-background">
     <TextParallaxContent
     imgPath="/Hero-kaffebar.webp"
     subheading="KAFFEBAR & KONTORFÆLLESSKAB"
