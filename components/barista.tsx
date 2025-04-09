@@ -55,7 +55,7 @@ export const BaristaSection = () => {
                 >
                     <h3 id="tilmeld" className="font-gothic text-3xl">Tilmelding</h3>
                     <p className="font-sans font-medium">Du kan tilmelde dig ved at skrive til kursusleder, Mikkel, på <Link href='mailto:mikkelrendal@gmail.com' className="bg-accent px-2 text-white rounded-lg hover:bg-accent2">mikkelrendal@gmail.com</Link> og derefter overføre kursusprisen på 500,- til SOLA på MobilePay: 28986</p>
-                    <p className="font-sans font-bold">Næste kursus er mandag d. 5. maj.</p>
+                    <p className="font-sans font-bold">Næste kursus er mandag d. 1. maj.</p>
                     <p className="font-sans font-medium">Vi glæder os til at dele kaffeglæden med dig hos SOLA!</p>
                 </motion.div>
 
