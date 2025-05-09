@@ -10,7 +10,7 @@ const Home = () => {
     <main className="bg-background">
         <TextParallaxContent
         imgPath="/espresso.webp"
-        subheading="Baristakursus hos SOLA – maj 2025"
+        subheading="Baristakursus hos SOLA – juni 2025"
         heading="BLIV BARISTA"
         href="/baristakursus/#tilmeld"
         buttonText="Tilmeld dig"
