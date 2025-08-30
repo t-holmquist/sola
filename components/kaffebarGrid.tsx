@@ -61,7 +61,8 @@ export const KaffeBarGrid = () => {
         <Infocard
         className="md:col-span-4 relative z-20"
         title="ÅBNINGSTIDER"
-        description="Vi har åbent tirsdag-fredag fra 8-12 og 8-15 i weekenden."
+        description="Tjek Google Maps"
+        link="https://maps.app.goo.gl/pFNLWyUDGFKggXiF7"
         />
         <Infocard
         className="md:col-span-4 relative z-20"
