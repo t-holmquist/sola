@@ -78,7 +78,7 @@ export const KaffeBarGrid = () => {
 
       {/* Menu gallery */}
       <motion.div 
-      className="relative sm:flex-row mt-52 mb-[100px] sm:mb-[140px]"
+      className="relative sm:flex-row mt-52 mb-[100px] sm:mb-[140px] z-10"
       initial={{
         x:10,
         opacity:0
@@ -95,13 +95,9 @@ export const KaffeBarGrid = () => {
         once: true
       }}
       >
-        <Image src='/line-drawing.png' width={450} height={300} alt="people-line-drawing" className="absolute hidden sm:block -top-40 -left-0"/>
+        <Image src='/line-drawing.png' width={450} height={300} alt="people-line-drawing" className="absolute hidden sm:block -top-44 -left-10"/>
         <Image src='/line-drawing.png' width={270} height={150} alt="people-line-drawing" className="absolute sm:hidden -top-36 right-0"/>
-        <div className="relative flex flex-col sm:flex-row items-center md:justify-between lg:justify-center gap-8">
-          <Image src='/menu_drikke.webp' width={350} height={500} alt="people-line-drawing" className="rounded-2xl"/>
-          <Image src='/menu_mad.webp' width={350} height={500} alt="people-line-drawing" className="rounded-2xl"/>
-
-        </div>
+        
       </motion.div>
 
     </section>
