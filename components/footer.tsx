@@ -21,11 +21,7 @@ const Footer = ({
                         <Link href='https://maps.app.goo.gl/XxDL68K5vBXtkUu98' className="text-white font-sans sm:text-[12px]">Johan Kellers Vej 1, 2450 København</Link>
                     </div>
                     <div className="flex gap-2">
-                        <Image src="/icons/phone.svg" width={15} height={15} alt="address"/>
-                        <Link href={`tel:${28576843}`} className="text-white font-sans sm:text-[12px]">+45 28 57 68 43</Link>
-                    </div>
-                    <div className="flex gap-2">
-                        <Image src="/icons/email.svg" width={15} height={15} alt="address"/>
+                        <Image src="/icons/email.svg" width={15} height={15} alt="email"/>
                         <Link href='mailto:kontakt@solacph.dk' className="text-white font-sans sm:text-[12px]">kontakt@solacph.dk</Link>
                     </div>
                     <div className="flex gap-2">
